@@ -629,7 +629,7 @@ const LOCAL_DEV_USER = {
       },
     {
         id: 'snbt1_22', packageId: 'snbt_1', category: 'PU',
-        question: `Diberikan titik C yang ditempatkan di bidang xy. Dari pernyataan berikut manakah yang dapat membuktikan titik C tidak berada di kuadran 3. <br>Putuskan apakah pernyataan (1) dan (2) berikut cukup menjawab pertanyaan tersebut. <br>(1) x2 – y + 4 = 0 <br>(2) 3x + 3y – 9 = 0`,
+        question: `Diberikan titik C yang ditempatkan di bidang xy. Dari pernyataan berikut manakah yang dapat membuktikan titik C tidak berada di kuadran 3. <br>Putuskan apakah pernyataan (1) dan (2) berikut cukup menjawab pertanyaan tersebut. <br>(1) x<sup>2</sup> – y + 4 = 0 <br>(2) 3x + 3y – 9 = 0`,
         options: [
           { id: 'A', text: 'Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.', score: 6.25 },
           { id: 'B', text: 'Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak   cukup.', score: 0 },
@@ -2214,7 +2214,7 @@ const LOCAL_DEV_USER = {
       },
          {
         id: 'snbt_2_06', packageId: 'snbt_2', category: 'PM',
-        question: `Tentukan himpunan penyelesaian dari sistem persamaan berikut: <br>y = x^2 − 2x − 3 y = x + 1`,
+        question: `Tentukan himpunan penyelesaian dari sistem persamaan berikut: <br>\\( y = x^2 - 2x - 3 \\) dan \\( y = x + 1 \\)`,
         options: [
           { id: 'A', text: '{(1,2), (4,5)}', score: 0 },
           { id: 'B', text: '{(-1,0), (4,5)}', score: 5 },
@@ -7693,17 +7693,17 @@ const LOCAL_DEV_USER = {
           { id: 'E', text: 'Grafik fungsi menyinggung sumbu-x di (4, 0).', score: 0 },
         ],
       },    
-       { id: 'tka_sma_2_mtkw_03', packageId: 'tka_sma_2', category: 'MTKW', 
-        question: "Jika D<sub>f</sub> menyatakan domain dari suatu fungsi f, domain fungsi rasional $f(x) = \\frac{x+1}{x^3 - 2x^2 - 3x} adalah ...",
-        options: [
-          { id: 'A', text: '$D_f = \\{x \\mid x \\neq 0,\\ x \\in \\mathbb{R}\\}$', score: 0 }, 
-          { id: 'B', text: '$D_f = \\{x \\mid x \\neq -3,\\ x \\neq 0,\\ x \\in \\mathbb{R}\\}$', score: 0 }, 
-          { id: 'C', text: '$D_f = \\{x \\mid x \\neq -3,\\ x \\neq 1,\\ x \\in \\mathbb{R}\\}$', score: 0 }, 
-          { id: 'D', text: '$D_f = \\{x \\mid x \\neq -1,\\ x \\neq 0,\\ x \\neq 3,\\ x \\in \\mathbb{R}\\}$', score: 3.33 }, 
-          { id: 'E', text: '$D_f = \\{x \\mid x \\neq -3,\\ x \\neq 0,\\ x \\neq 1,\\ x \\in \\mathbb{R}\\}$', score: 0 },
-        ],
-      },    
-       { id: 'tka_sma_2_mtkw_04', packageId: 'tka_sma_2', category: 'MTKW', 
+        { id: 'tka_sma_2_mtkw_03', packageId: 'tka_sma_2', category: 'MTKW', 
+         question: `Jika $D_f$ menyatakan domain dari suatu fungsi $f$, domain fungsi rasional $f(x) = \\frac{x+1}{x^3 - 2x^2 - 3x}$ adalah ....`,
+         options: [
+           { id: 'A', text: `$D_f = \\{x \\mid x \\neq 0,\\ x \\in \\mathbb{R}\\}$`, score: 0 }, 
+           { id: 'B', text: `$D_f = \\{x \\mid x \\neq -3,\\ x \\neq 0,\\ x \\in \\mathbb{R}\\}$`, score: 0 }, 
+           { id: 'C', text: `$D_f = \\{x \\mid x \\neq -3,\\ x \\neq 1,\\ x \\in \\mathbb{R}\\}$`, score: 0 }, 
+           { id: 'D', text: `$D_f = \\{x \\mid x \\neq -1,\\ x \\neq 0,\\ x \\neq 3,\\ x \\in \\mathbb{R}\\}$`, score: 3.33 }, 
+           { id: 'E', text: `$D_f = \\{x \\mid x \\neq -3,\\ x \\neq 0,\\ x \\neq 1,\\ x \\in \\mathbb{R}\\}$`, score: 0 }
+          ],
+        },
+        { id: 'tka_sma_2_mtkw_04', packageId: 'tka_sma_2', category: 'MTKW', 
          question: "Invers fungsi f dituliskan sebagai $f^{-1}$. Diberikan $(g \\circ f)(x) = \\frac{x+1}{x-1}$, $x \\neq 1$, dan $g(x)=2x-5$. Pilih semua jawaban yang benar terkait dengan fungsi f dan g! Jawaban benar lebih dari satu.",        
          options: [
           { id: 'A', text: '$f(x) = \\frac{3x-2}{x-1}$', score: 1.665 }, 
@@ -8600,8 +8600,8 @@ const LOCAL_DEV_USER = {
       }, 
 
         { id: 'tka_sma_2_mtkl_01', packageId: 'tka_sma_2', category: 'MTKL',
-          question: `Diketahui matriks P = <table border='1' cellspacing='0' cellpadding='5' style='display:inline-table; margin:5px;'> <tr><td>1</td><td>2</td></tr> <tr><td>−1</td><td>−4</td></tr> </table> dan Q = <table border='1' cellspacing='0' cellpadding='5' style='display:inline-table; margin:5px;'> <tr><td>2</td><td>5</td></tr> <tr><td>−1</td><td>2</td></tr> </table>. Determinan (P + Q) adalah ....`,
-          options: [
+        question: `Diketahui matriks P = <span style="display:inline-flex;align-items:center;vertical-align:middle;margin:0 4px;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;">1</td><td style="width:32px;text-align:center;padding:3px 5px;">2</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;">−1</td><td style="width:32px;text-align:center;padding:3px 5px;">−4</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>dan Q = <span style="display:inline-flex;align-items:center;vertical-align:middle;margin:0 4px;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;">2</td><td style="width:32px;text-align:center;padding:3px 5px;">5</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;">−1</td><td style="width:32px;text-align:center;padding:3px 5px;">2</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>.Determinan (P + Q) adalah ....`,
+        options: [
             { id: 'A', text: '9', score: 0 },
             { id: 'B', text: '8', score: 3.33 },
             { id: 'C', text: '5', score: 0 },
@@ -8610,18 +8610,18 @@ const LOCAL_DEV_USER = {
           ],
         },
         { id: 'tka_sma_2_mtkl_02', packageId: 'tka_sma_2', category: 'MTKL',
-          question: `Diketahui matriks A = <table border='1' cellspacing='0' cellpadding='5' style='display:inline-table; margin:5px;'> <tr><td>−1</td><td>2</td></tr> <tr><td>3</td><td>4</td></tr> </table>, B = <table border='1' cellspacing='0' cellpadding='5' style='display:inline-table; margin:5px;'> <tr><td>−2</td><td>0</td></tr> <tr><td>3</td><td>3</td></tr> </table>, dan C = <table border='1' cellspacing='0' cellpadding='5' style='display:inline-table; margin:5px;'> <tr><td>−4</td><td>4</td></tr> <tr><td>−3</td><td>2</td></tr> </table>. Invers dari matriks 3A − 4B + C<sup>T</sup> adalah ....`,
+          question: `Diketahui matriks A = <span style="display:inline-flex;align-items:center;vertical-align:middle;margin:0 4px;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;">−1</td><td style="width:32px;text-align:center;padding:3px 5px;">2</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;">3</td><td style="width:32px;text-align:center;padding:3px 5px;">4</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>, B = <span style="display:inline-flex;align-items:center;vertical-align:middle;margin:0 4px;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;">1</td><td style="width:32px;text-align:center;padding:3px 5px;">−2</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;">−3</td><td style="width:32px;text-align:center;padding:3px 5px;">−1</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>, dan C = <span style="display:inline-flex;align-items:center;vertical-align:middle;margin:0 4px;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;">2</td><td style="width:32px;text-align:center;padding:3px 5px;">−1</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;">1</td><td style="width:32px;text-align:center;padding:3px 5px;">3</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>. Invers dari matriks 3A − 4B + C<sup>T</sup> adalah ....`,            
           options: [
-            { id: 'A', text: `<table border='1' cellspacing='0' cellpadding='5'> <tr><td>2/5</td><td>−3/5</td></tr> <tr><td>1/5</td><td>1/5</td></tr> </table>`,score: 0},
-            { id: 'B', text: `<table border='1' cellspacing='0' cellpadding='5'> <tr><td>−2/5</td><td>3/5</td></tr> <tr><td>1/5</td><td>−1/5</td></tr> </table>`, score: 0 },
-            { id: 'C', text: `<table border='1' cellspacing='0' cellpadding='5'> <tr><td>−2</td><td>3</td></tr> <tr><td>1</td><td>−1</td></tr> </table>`, score: 3.33 },
-            { id: 'D', text: `<table border='1' cellspacing='0' cellpadding='5'> <tr><td>2</td><td>−3</td></tr> <tr><td>−1</td><td>1</td></tr> </table>`, score: 0 },
-            { id: 'E', text: `<table border='1' cellspacing='0' cellpadding='5'> <tr><td>−1</td><td>1</td></tr> <tr><td>2</td><td>−3</td></tr> </table>`, score: 0 }
+            { id: 'A', text: `<span style="display:inline-flex;align-items:center;vertical-align:middle;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;">\\(\\frac{2}{5}\\)</td><td style="width:32px;text-align:center;padding:3px 5px;">\\(-\\frac{3}{5}\\)</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;">\\(\\frac{1}{5}\\)</td><td style="width:32px;text-align:center;padding:3px 5px;">\\(\\frac{1}{5}\\)</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>`, score: 0 },
+            { id: 'B', text: `<span style="display:inline-flex;align-items:center;vertical-align:middle;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;">\\(-\\frac{2}{5}\\)</td><td style="width:32px;text-align:center;padding:3px 5px;">\\(\\frac{3}{5}\\)</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;">\\(\\frac{1}{5}\\)</td><td style="width:32px;text-align:center;padding:3px 5px;">\\(-\\frac{1}{5}\\)</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>`, score: 0 },
+            { id: 'C', text: `<span style="display:inline-flex;align-items:center;vertical-align:middle;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;">−2</td><td style="width:32px;text-align:center;padding:3px 5px;">3</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;">1</td><td style="width:32px;text-align:center;padding:3px 5px;">−1</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>`, score: 3.33 },
+            { id: 'D', text: `<span style="display:inline-flex;align-items:center;vertical-align:middle;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;">2</td><td style="width:32px;text-align:center;padding:3px 5px;">−3</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;">−1</td><td style="width:32px;text-align:center;padding:3px 5px;">1</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>`, score: 0 },
+            { id: 'E', text: `<span style="display:inline-flex;align-items:center;vertical-align:middle;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;">−1</td><td style="width:32px;text-align:center;padding:3px 5px;">1</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;">2</td><td style="width:32px;text-align:center;padding:3px 5px;">−3</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>`, score: 0 },
           ],
         },
         { id: 'tka_sma_2_mtkl_03', packageId: 'tka_sma_2', category: 'MTKL',
-          question: `Diketahui matriks A = <table border='1' cellspacing='0' cellpadding='5' style='display:inline-table; margin:5px;'> <tr><td>3</td><td>0</td></tr> <tr><td>2</td><td>5</td></tr> </table>, B = <table border='1' cellspacing='0' cellpadding='5' style='display:inline-table; margin:5px;'> <tr><td>x</td><td>−1</td></tr> <tr><td>y</td><td>1</td></tr> </table>, dan C = <table border='1' cellspacing='0' cellpadding='5' style='display:inline-table; margin:5px;'> <tr><td>0</td><td>3</td></tr> <tr><td>1</td><td>11</td></tr> </table>. Jika 2A<sup>T</sup> + B = C, maka nilai x − y adalah ....`,
-          options: [
+        question: `Diketahui matriks A = <span style="display:inline-flex;align-items:center;vertical-align:middle;margin:0 4px;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;">3</td><td style="width:32px;text-align:center;padding:3px 5px;">0</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;">2</td><td style="width:32px;text-align:center;padding:3px 5px;">5</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>, B = <span style="display:inline-flex;align-items:center;vertical-align:middle;margin:0 4px;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;"><i>x</i></td><td style="width:32px;text-align:center;padding:3px 5px;">−1</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;"><i>y</i></td><td style="width:32px;text-align:center;padding:3px 5px;">1</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>, C = <span style="display:inline-flex;align-items:center;vertical-align:middle;margin:0 4px;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;">0</td><td style="width:32px;text-align:center;padding:3px 5px;">3</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;">1</td><td style="width:32px;text-align:center;padding:3px 5px;">1</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>. Jika 2A<sup>T</sup> + B = C, maka nilai x − y adalah ....`,
+        options: [
             { id: 'A', text: '5', score: 0 },
             { id: 'B', text: '1', score: 0 },
             { id: 'C', text: '−1', score: 0 },
@@ -8671,18 +8671,18 @@ const LOCAL_DEV_USER = {
           ],
         },
         { id: 'tka_sma_2_mtkl_08', packageId: 'tka_sma_2', category: 'MTKL',
-          question: `Bayangan dari kurva <i>y</i> = 2<i>x</i><sup>2</sup> − 5 yang ditranslasikan oleh matriks <table border='1' cellspacing='0' cellpadding='5' style='display:inline-table; margin:5px;'> <tr><td>−3</td></tr>  <tr><td>2</td></tr> </table> kemudian didilatasikan oleh (O, 2) dengan O merupakan titik koordinat (0,0) adalah ....`,
+          question: `Bayangan dari kurva <i>y</i> = 2<i>x</i><sup>2</sup> − 5 yang ditranslasikan oleh matriks <span style="display:inline-flex;align-items:center;vertical-align:middle;margin:0 4px;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:32px;text-align:center;padding:3px 5px;">−3</td></tr><tr><td style="width:32px;text-align:center;padding:3px 5px;">2</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span> kemudian didilatasikan oleh (O, 2) dengan O merupakan titik koordinat (0,0) adalah ....`,
           options: [
-            { id: 'A', text: `<i>y</i> = 1/4<i>x</i><sup>2</sup> + 3<i>x</i> + \\(\\frac{15}{2}\\)`, score: 0 },
-            { id: 'B', text: `<i>y</i> = 1/4<i>x</i><sup>2</sup> + 3<i>x</i> + \\(\\frac{17}{2}\\)`, score: 0 },
+            { id: 'A', text: `<i>y</i> = \\(\\frac{1}{4}\\)<i>x</i><sup>2</sup> + 3<i>x</i> + \\(\\frac{15}{2}\\)`, score: 0 },
+            { id: 'B', text: `<i>y</i> = \\(\\frac{1}{4}\\)<i>x</i><sup>2</sup> + 3<i>x</i> + \\(\\frac{17}{2}\\)`, score: 0 },
             { id: 'C', text: `<i>y</i> = <i>x</i><sup>2</sup> + 12<i>x</i> + 30`, score: 3.33 },
             { id: 'D', text: `<i>y</i> = <i>x</i><sup>2</sup> − 12<i>x</i> + 22`, score: 0 },
             { id: 'E', text: `<i>y</i> = 4<i>x</i><sup>2</sup> + 12<i>x</i> + 15`, score: 0 }
           ],
         },
         { id: 'tka_sma_2_mtkl_09', packageId: 'tka_sma_2', category: 'MTKL',
-          question: `Nilai dari <br><br> <center> lim<sub>x→2</sub> <span style="font-size:18px;"> (x<sup>2</sup> + 5x − 14) / (4 − √(x<sup>2</sup> + 12)) </span> </center> adalah ....`,
-          options: [
+        question: `Nilai dari <br><br><center>\\[\\lim_{x\\to2}\\frac{x^2+5x-14}{4-\\sqrt{x^2+12}}\\]</center> adalah ....`,
+        options: [
             { id: 'A', text: '−18', score: 3.33 },
             { id: 'B', text: '−9', score: 0 },
             { id: 'C', text: '0', score: 0 },
@@ -8693,16 +8693,16 @@ const LOCAL_DEV_USER = {
         { id: 'tka_sma_2_mtkl_10', packageId: 'tka_sma_2', category: 'MTKL',
           question: `Nilai dari <br><br> <center> lim<sub>x→∞</sub> (√(3x) − √(3x − 4))(√(3x + 2)) </center> adalah ....`,
           options: [
-            { id: 'A', text: '−(4/3)√3', score: 0 },
+            { id: 'A', text: `−\\(\\frac{4}{3}\\)√3`, score: 0 },
             { id: 'B', text: '−2', score: 0 },
             { id: 'C', text: '0', score: 0 },
             { id: 'D', text: '2', score: 3.33 },
-            { id: 'E', text: '(4/3)√3', score: 0 }
+            { id: 'E', text: `\\(\\frac{4}{3}\\)√3`, score: 0 },
           ],
         },
         { id: 'tka_sma_2_mtkl_11', packageId: 'tka_sma_2', category: 'MTKL',
-          question: `Diketahui M = <table border='1' cellspacing='0' cellpadding='5' style='display:inline-table; margin:5px;'> <tr><td>2</td><td>5</td></tr> <tr><td>1</td><td>3</td></tr> </table> dan M<sup>−1</sup> melambangkan invers dari M. Berapakah nilai p dan q yang tepat memenuhi <br> pM<sup>−1</sup> = q <table border='1' cellspacing='0' cellpadding='5' style='display:inline-table; margin:5px;'> <tr><td>6</td><td>−10</td></tr> <tr><td>−2</td><td>4</td></tr> </table>? <br><br> Pilih semua jawaban benar! Jawaban benar lebih dari satu.`,
-          options: [
+        question: `Diketahui M = <span style="display:inline-flex;align-items:center;vertical-align:middle;margin:0 4px;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:48px;text-align:center;padding:3px 5px;">2</td><td style="width:48px;text-align:center;padding:3px 5px;">5</td></tr><tr><td style="width:48px;text-align:center;padding:3px 5px;">1</td><td style="width:48px;text-align:center;padding:3px 5px;">3</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span> dan M<sup>−1</sup> melambangkan invers dari M. Berapakah nilai p dan q yang tepat memenuhi <br> pM<sup>−1</sup> = q <span style="display:inline-flex;align-items:center;vertical-align:middle;margin:0 4px;"><span style="font-size:42px;line-height:1;font-family:serif;margin-right:4px;">(</span><table cellspacing="0" cellpadding="0" style="display:inline-table;border-collapse:collapse;vertical-align:middle;"><tr><td style="width:48px;text-align:center;padding:3px 5px;">6</td><td style="width:48px;text-align:center;padding:3px 5px;">−10</td></tr><tr><td style="width:48px;text-align:center;padding:3px 5px;">−2</td><td style="width:48px;text-align:center;padding:3px 5px;">4</td></tr></table><span style="font-size:42px;line-height:1;font-family:serif;margin-left:4px;">)</span></span>? <br><br> Pilih semua jawaban benar! Jawaban benar lebih dari satu.`,  
+        options: [
             { id: 'A', text: 'p = 2 dan q = 1', score: 1.11 },
             { id: 'B', text: 'p = 3 dan q = 3', score: 0 },
             { id: 'C', text: 'p = 4 dan q = 2', score: 1.11 },
@@ -8753,11 +8753,11 @@ const LOCAL_DEV_USER = {
           ],
         },
         { id: 'tka_sma_2_mtkl_16', packageId: 'tka_sma_2', category: 'MTKL',
-          question: `Nilai dari<br><br> <center> lim<sub>x→π</sub> <span style="font-size:18px;"> sin(x − π) / [3(π − x) cos(4x)] </span> </center> adalah ....`,
-          options: [
-            { id: 'A', text: '−1/3', score: 3.33 },
+        question: `Nilai dari<br><br><center>\\[\\lim_{x\\to\\pi}\\frac{\\sin(x-\\pi)}{3(\\pi-x)\\cos(4x)}\\]</center> adalah ....`,
+        options: [
+            { id: 'A', text: `\\(\\frac{-1}{3}\\)`, score: 3.33 },
             { id: 'B', text: '0', score: 0 },
-            { id: 'C', text: '1/3', score: 0 },
+            { id: 'C', text: `\\(\\frac{1}{3}\\)`, score: 0 },
             { id: 'D', text: '1', score: 0 },
             { id: 'E', text: '3', score: 0 }
           ],
@@ -8877,7 +8877,7 @@ const LOCAL_DEV_USER = {
         ],
       },
       { id: 'tka_sma_2_mtkl_28', packageId: 'tka_sma_2', category: 'MTKL',
-        question: `Sebuah juring lingkaran memiliki sudut pusat 90° dan jari-jari 14 cm. Evaluasilah kebenaran pernyataan berikut (π = 22/7).<br><br>Tentukan Benar atau Salah untuk setiap pernyataan.`,
+        question: `Sebuah juring lingkaran memiliki sudut pusat 90° dan jari-jari 14 cm. Evaluasilah kebenaran pernyataan berikut (π = \\(\\frac{22}{7}\\)).<br><br>Tentukan Benar atau Salah untuk setiap pernyataan.`,
         image: "https://i.ibb.co.com/VpjHrMxn/image.png",
         options: [
           { id: 'A', text: `Benar, Benar, Benar`, score: 0 },
@@ -8898,7 +8898,7 @@ const LOCAL_DEV_USER = {
         ],
       },
       { id: 'tka_sma_2_mtkl_30', packageId: 'tka_sma_2', category: 'MTKL',
-        question: `Nilai dari <span style="white-space: nowrap;">lim<sub>x → π/4</sub> [cos(2x) / (cos(x) - sin(x))]</span> adalah....`,
+        question: `Nilai dari<br><br><center>\\[\\lim_{x\\to\\frac{\\pi}{4}}\\frac{\\cos(2x)}{\\cos(x)-\\sin(x)}\\]</center> adalah....`,
         options: [
           { id: 'A', text: `1`, score: 0 },
           { id: 'B', text: `0`, score: 0 },
@@ -10259,13 +10259,13 @@ const LOCAL_DEV_USER = {
         ],
       },
       { id: 'tka_sma_3_mtkw_13', packageId: 'tka_sma_3', category: 'MTKW',
-      question: `Diketahui fungsi \( f(x) = \frac{4x - 7}{3 - x}, x \neq 3 \). Jika invers dari f(x) adalah f<sup>−1</sup>(x), nilai dari f<sup>−1</sup>(0) adalah ....`,
-      options: [
-      { id: 'A', text: ` \\(-\\frac{7}{4}\\) `, score: 0 },
-      { id: 'B', text: ` \\(-\\frac{4}{7}\\) `, score: 0 },
-      { id: 'C', text: ` \\(\\frac{4}{7}\\) `, score: 0 },
-      { id: 'D', text: `0`, score: 0 },
-      { id: 'E', text: ` \\(\\frac{7}{4}\\) `, score: 3.33 }
+       question: `Diketahui fungsi $f(x) = \\frac{4x - 7}{3 - x}, x \\neq 3$. Jika invers dari $f(x)$ adalah $f^{-1}(x)$, nilai dari $f^{-1}(0)$ adalah ....`,
+       options: [
+         { id: 'A', text: `$-\\frac{7}{4}$`, score: 0 },
+         { id: 'B', text: `$-\\frac{4}{7}$`, score: 0 },
+         { id: 'C', text: `$\\frac{4}{7}$`, score: 0 },
+         { id: 'D', text: `$0$`, score: 0 },
+         { id: 'E', text: `$\\frac{7}{4}$`, score: 3.33 }
         ],
       },
       { id: 'tka_sma_3_mtkw_14', packageId: 'tka_sma_3', category: 'MTKW',
@@ -10424,13 +10424,13 @@ const LOCAL_DEV_USER = {
         ],
       },
       { id: 'tka_sma_3_mtkw_29', packageId: 'tka_sma_3', category: 'MTKW',
-      question: `Perhatikan teks berikut untuk menjawab soal nomor 29 dan 30.<br><br>Tiga peserta didik, yaitu Ali, Tafta, dan Ziko diberikan tes susulan Matematika. Peluang Ali lulus adalah \(\frac{3}{5}\), peluang Tafta lulus \(\frac{2}{3}\), dan peluang Ziko lulus \(\frac{1}{2}\).<br><br>Berdasarkan teks, beri tanda centang (√) pada kotak untuk setiap pernyataan berikut yang benar. (Jawaban dapat lebih dari satu)`,
-      options: [
-      { id: 'A', text: `Peluang hanya Ali saja yang lulus adalah \\(\\frac{3}{5}\\).`, score: 0 },
-      { id: 'B', text: `Peluang hanya Ziko saja yang tidak lulus adalah \\(\\frac{6}{30}\\).`, score: 0 },
-      { id: 'C', text: `Peluang ketiganya lulus adalah \\(\\frac{6}{30}\\).`, score: 1.665 },
-      { id: 'D', text: `Peluang minimal hanya dua peserta didik yang lulus adalah \\(\\frac{19}{30}\\).`, score: 1.665 },
-      { id: 'E', text: `Peluang ketiganya gagal adalah 50%.`, score: 0 }
+       question: `Perhatikan teks berikut untuk menjawab soal nomor 29 dan 30.<br><br>Tiga peserta didik, yaitu Ali, Tafta, dan Ziko diberikan tes susulan Matematika. Peluang Ali lulus adalah $\\frac{3}{5}$, peluang Tafta lulus $\\frac{2}{3}$, dan peluang Ziko lulus $\\frac{1}{2}$.<br><br>Berdasarkan teks, beri tanda centang (√) pada kotak untuk setiap pernyataan berikut yang benar. (Jawaban dapat lebih dari satu)`,
+       options: [
+         { id: 'A', text: `Peluang hanya Ali saja yang lulus adalah $\\frac{3}{5}$.`, score: 0 },
+         { id: 'B', text: `Peluang hanya Ziko saja yang tidak lulus adalah $\\frac{6}{30}$.`, score: 0 },
+         { id: 'C', text: `Peluang ketiganya lulus adalah $\\frac{6}{30}$.`, score: 1.665 },
+         { id: 'D', text: `Peluang minimal hanya dua peserta didik yang lulus adalah $\\frac{19}{30}$.`, score: 1.665 },
+         { id: 'E', text: `Peluang ketiganya gagal adalah 50%.`, score: 0 }
         ],
       },
       { id: 'tka_sma_3_mtkw_30', packageId: 'tka_sma_3', category: 'MTKW',
@@ -10648,6 +10648,739 @@ const LOCAL_DEV_USER = {
       { id: 'E', text: `Salah, Benar, Benar`, score: 0 },
         ],
       },
+      
+      { 
+        id: 'tka_sma_3_bind_21', packageId: 'tka_sma_3', category: 'BIND',
+        question: `<b>Bacalah teks berikut untuk menjawab soal nomor 31.</b><br><br>Deepfake adalah produk teknologi kecerdasan buatan (Al) yang mampu menciptakan atau memanipulasi konten video dan audio sehingga menghasilkan rekayasa yang tampak sangat otentik. Teknologi ini pada intinya bekerja dengan menggunakan metode deep learning, terutama melalui mekanisme Jaringan Adversarial Generatif (GAN). Dalam sistem GAN, dua jaringan Al saling "bersaing": satu jaringan (generator) bertugas menciptakan gambar atau video sintetis, sementara jaringan lainnya (diskriminator) bertugas mengevaluasi dan membedakan mana yang asli dan mana yang palsu. Proses ini berlanjut hingga generator mampu menghasilkan karya palsu yang begitu meyakinkan sehingga tidak bisa lagi dibedakan oleh diskriminator.<br><br>Kehadiran teknologi deepfake laksana pedang bermata dua. Di satu sisi, ia membuka peluang luar biasa di berbagai bidang kreatif. Dalam industri film, deepfake dapat digunakan untuk "menghidupkan" kembali aktor yang telah tiada atau untuk menyempurnakan efek visual. Di bidang pendidikan, ia bisa dimanfaatkan untuk menciptakan avatar pengajar yang dipersonalisasi. Namun, di sisi lain, potensi penyalahgunaannya menghadirkan ancaman yang serius terhadap tatanan sosial.<br><br>Risiko terbesar dari deepfake terletak pada kemampuannya untuk dijadikan alat disinformasi dan penipuan. Bayangkan sebuah video palsu yang menampilkan seorang tokoh politik mengucapkan pernyataan kontroversial yang tidak pernah ia katakan, atau video rekayasa yang digunakan untuk memfitnah dan merusak reputasi seseorang. Ketika konten audio-visual tidak lagi bisa dipercaya sebagai bukti realitas, kepercayaan publik terhadap media, pemerintah, dan bahkan terhadap indra kita sendiri akan terkikis. Fenomena ini dapat memicu polarisasi politik yang lebih tajam dan kekacauan sosial.<br><br>Tantangan yang dihadirkan deepfake melampaui sekadar persoalan teknis. Melawannya tidak cukup hanya dengan mengembangkan teknologi deteksi yang lebih canggih. Lebih dari itu, ini adalah pertarungan melawan erosi kebenaran itu sendiri. Diperlukan sebuah kecerdasan kolektif-meliputi literasi digital yang kritis, verifikasi informasi yang ketat, dan kerangka hukum yang adaptif untuk menavigasi era di mana batas antara realitas dan rekayasa menjadi semakin kabur.<br><br>Sumber: Dokumen Penulis<br><br>Analisislah struktur argumen yang dibangun penulis dari awal hingga akhir teks! Pilihlah kolom Benar atau Salah untuk pernyataan berikut sesuai dengan teks tersebut.`,
+        image: "https://i.ibb.co.com/n8bxJDZR/image.png",
+        options: [
+          { id: 'A', text: `Benar, Benar, Benar`, score: 0 },
+          { id: 'B', text: `Benar, Benar, Salah`, score: 3.33 },
+          { id: 'C', text: `Benar, Salah, Benar`, score: 0 },
+          { id: 'D', text: `Salah, Benar, Salah`, score: 0 },
+          { id: 'E', text: `Salah, Salah, Salah`, score: 0 }
+        ],
+      },
+      { 
+        id: 'tka_sma_3_bind_22', packageId: 'tka_sma_3', category: 'BIND',
+        question: `<b>Bacalah teks berikut untuk menjawab soal nomor 22 sampai 26.</b><br><br>Selama berabad-abad, manusia memandang alam sebagai sumber daya untuk dieksploitasi. Namun, sebuah paradigma baru yang semakin berkembang mengajak kita untuk melihat alam dari sudut pandang yang berbeda: sebagai mentor dan sumber inspirasi. Pendekatan ini dikenal sebagai biomimikri, sebuah disiplin ilmu yang mencari solusi inovatif untuk tantangan manusia dengan meniru strategi, desain, dan prinsip yang telah teruji oleh alam selama 3,8 miliar tahun evolusi.<br><br>Konsep biomimikri sebenarnya telah lama ada dalam bentuk sederhana. Salah satu contoh paling klasik adalah perekat Velcro yang terinspirasi dari cara biji tanaman burdock menempel pada bulu anjing menggunakan kait-kait kecil. Contoh yang lebih kompleks adalah desain hidung kereta peluru Shinkansen di Jepang. Para insinyur meniru bentuk paruh burung raja udang (kingfisher) yang mampu masuk ke dalam air dengan percikan minimal. Hasilnya, kereta tidak hanya menjadi lebih senyap saat memasuki terowongan mengeliminasi ledakan sonik yang bising-tetapi juga lebih aerodinamis dan hemat energi hingga 15%.<br><br>Inti dari biomimikri bukanlah sekadar meniru bentuk (biomorfisme), melainkan memahami dan mengadaptasi resep atau prinsip kerja di baliknya. Alam telah lebih dahulu menyelesaikan berbagai persoalan yang kini kita hadapi, seperti efisiensi energi, pengelolaan limbah (dalam ekosistem, tidak ada konsep limbah), hingga pembuatan material yang kuat namun ringan. Dengan mempelajari bagaimana seekor rayap mampu membangun sarang dengan sistem ventilasi pasif yang canggih atau bagaimana daun teratai tetap bersih melalui efek hidrofobik, kita dapat merancang bangunan dan material yang lebih berkelanjutan.<br><br>Pada dasarnya, biomimikri menawarkan sebuah jalan menuju inovasi yang lebih ramah lingkungan dan efisien. la mengubah pertanyaan dari "apa yang bisa kita ambil dari alam?" menjadi "apa yang bisa kita pelajari dari alam?". Pendekatan ini mengajarkan bahwa solusi paling canggih, elegan, dan berkelanjutan sering kali sudah ada di sekitar kita, menunggu untuk ditemukan. Ini adalah sebuah dialog antara kecerdasan manusia dan kegeniusan alam.<br><br>Apa perbedaan mendasar antara biomimikri dan biomorfisme menurut penjelasan dalam teks?`,
+        options: [
+          { id: 'A', text: `Biomimikri meniru hewan, sedangkan biomorfisme meniru tumbuhan.`, score: 0 },
+          { id: 'B', text: `Biomimikri digunakan untuk teknologi modern, sedangkan biomorfisme untuk seni tradisional.`, score: 0 },
+          { id: 'C', text: `Biomimikri harus ramah lingkungan, sedangkan biomorfisme tidak memiliki syarat tersebut.`, score: 0 },
+          { id: 'D', text: `Biomimikri berfokus pada fungsi dan prinsip kerja, sedangkan biomorfisme hanya meniru bentuk luar.`, score: 3.33 },
+          { id: 'E', text: `Biomimikri terinspirasi dari makhluk hidup, sedangkan biomorfisme dari benda mati.`, score: 0 }
+        ],
+      },
+      { 
+        id: 'tka_sma_3_bind_23', packageId: 'tka_sma_3', category: 'BIND',
+        question: `Nilai utama yang diusung oleh pendekatan biomimikri sebagaimana digambarkan dalam teks adalah ....`,
+        options: [
+          { id: 'A', text: `superioritas teknologi`, score: 0 },
+          { id: 'B', text: `eksploitasi berkelanjutan`, score: 0 },
+          { id: 'C', text: `kecepatan dan kekuatan`, score: 0 },
+          { id: 'D', text: `efisiensi dan keberlanjutan`, score: 3.33 },
+          { id: 'E', text: `estetika dan keindahan`, score: 0 }
+        ],
+      },
+      { 
+        id: 'tka_sma_3_bind_24', packageId: 'tka_sma_3', category: 'BIND',
+        question: `Penulis menyatakan bahwa dalam ekosistem alam, "tidak ada konsep limbah". Nilailah validitas dan implikasi dari pernyataan tersebut dalam konteks biomimikri!<br><br>Tentukan Sesuai atau Tidak Sesuai untuk setiap pernyataan evaluasi berikut.`,
+        image: "https://i.ibb.co.com/F4JDfsQT/image.png",
+        options: [
+          { id: 'A', text: `Sesuai, Sesuai, Sesuai`, score: 0 },
+          { id: 'B', text: `Sesuai, Sesuai, Tidak Sesuai`, score: 3.33 },
+          { id: 'C', text: `Sesuai, Tidak Sesuai, Sesuai`, score: 0 },
+          { id: 'D', text: `Tidak Sesuai, Sesuai, Sesuai`, score: 0 },
+          { id: 'E', text: `Tidak Sesuai, Tidak Sesuai, Tidak Sesuai`, score: 0 }
+        ],
+      },
+      { 
+        id: 'tka_sma_3_bind_25', packageId: 'tka_sma_3', category: 'BIND',
+        question: `Berdasarkan contoh-contoh yang diberikan dalam teks, masalah rekayasa apa saja yang berhasil dipecahkan dengan pendekatan biomimikri?<br><br>Pilihlah jawaban yang benar! (Jawaban benar lebih dari satu).`,
+        options: [
+          { id: 'A', text: `Menciptakan sistem perekat yang dapat dibuka-tutup berulang kali.`, score: 0.8325 },
+          { id: 'B', text: `Mengurangi polusi suara yang dihasilkan kereta saat memasuki terowongan.`, score: 0.8325 },
+          { id: 'C', text: `Meningkatkan efisiensi aerodinamis kendaraan berkecepatan tinggi.`, score: 0.8325 },
+          { id: 'D', text: `Mengatur suhu di dalam bangunan tanpa pendingin udara aktif.`, score: 0.8325 },
+          { id: 'E', text: `Membangun material super kuat untuk aplikasi militer.`, score: 0 }
+        ],
+      },
+      { 
+        id: 'tka_sma_3_bind_26', packageId: 'tka_sma_3', category: 'BIND',
+        question: `Analisislah bagaimana penulis menyusun alur argumennya dari awal hingga akhir teks!<br><br>Tentukan Benar atau Salah untuk setiap pernyataan mengenai alur argumen berikut.`,
+        image: "https://i.ibb.co.com/gLWpNTJK/image.png",
+        options: [
+          { id: 'A', text: `Benar, Benar, Benar`, score: 0 },
+          { id: 'B', text: `Benar, Benar, Salah`, score: 3.33 },
+          { id: 'C', text: `Benar, Salah, Benar`, score: 0 },
+          { id: 'D', text: `Salah, Benar, Benar`, score: 0 },
+          { id: 'E', text: `Salah, Benar, Salah`, score: 0 }
+        ],
+      },
+      { 
+        id: 'tka_sma_3_bind_27', packageId: 'tka_sma_3', category: 'BIND',
+        question: `<b>Bacalah teks berikut untuk menjawab soal nomor 27 sampai 30.</b><br><br>Manusia sering kali dianggap sebagai makhluk rasional yang membuat keputusan secara sadar. Namun, penelitian dalam ilmu perilaku menunjukkan bahwa pilihan kita sering kali dipengaruhi oleh faktor-faktor yang bahkan tidak kita sadari. Berdasarkan pemahaman ini, muncullah sebuah konsep yang dikenal sebagai Teori Dorongan atau Nudge Theory. Teori ini adalah sebuah pendekatan untuk memengaruhi perilaku dan pengambilan keputusan seseorang secara positif tanpa paksaan atau larangan.<br><br>Inti dari teori ini adalah konsep "arsitektur pilihan", yaitu gagasan bahwa cara pilihan disajikan dapat memengaruhi keputusan akhir. Sebuah "dorongan" atau nudge adalah intervensi yang secara sengaja dirancang dalam arsitektur pilihan tersebut untuk mengarahkan orang ke pilihan yang dianggap lebih baik. Kunci utamanya adalah intervensi ini tidak melarang pilihan lain atau mengubah insentif ekonomi secara signifikan. Kebebasan memilih tetap utuh, tetapi pilihan yang lebih baik dibuat menjadi lebih mudah atau lebih menarik.<br><br>Contoh penerapan yang terkenal adalah di kantin sekolah. Dengan meletakkan buah-buahan dan salad di posisi yang setara dengan mata dan menempatkan makanan manis di tempat yang lebih sulit dijangkau, siswa secara tidak sadar akan lebih cenderung memilih opsi yang lebih sehat. Contoh lain adalah sistem donasi organ. Di negara yang menerapkan sistem opt-out (di mana setiap warga negara secara otomatis dianggap sebagai pendonor kecuali mereka secara aktif menyatakan sebaliknya), tingkat donasi organ jauh lebih tinggi dibandingkan negara dengan sistem opt-in (di mana warga harus aktif mendaftar untuk menjadi pendonor).<br><br>Meskipun bertujuan baik, teori ini memicu perdebatan etis. Para kritikus berpendapat bahwa nudge bisa dianggap sebagai bentuk manipulasi paternalistik, di mana pemerintah atau institusi secara halus "menggiring" warganya tanpa persetujuan eksplisit. Namun, para pendukungnya berargumen bahwa arsitektur pilihan akan selalu ada dalam bentuk apa pun; oleh karena itu, bukankah lebih baik jika ia dirancang secara sadar untuk mendorong hasil yang positif bagi individu dan masyarakat?<br><br>Apa yang dimaksud dengan "arsitektur pilihan" menurut penjelasan dalam teks?`,
+        options: [
+          { id: 'A', text: `Cara atau format penyajian berbagai pilihan yang dapat memengaruhi keputusan seseorang.`, score: 3.33 },
+          { id: 'B', text: `Desain fisik sebuah bangunan yang memaksimalkan pilihan bagi penghuninya.`, score: 0 },
+          { id: 'C', text: `Kerangka hukum yang mengatur pilihan-pilihan yang tersedia bagi warga negara.`, score: 0 },
+          { id: 'D', text: `Sebuah sistem pemungutan suara di mana pilihan diurutkan berdasarkan popularitas.`, score: 0 },
+          { id: 'E', text: `Kemampuan seseorang untuk merancang pilihan hidupnya sendiri secara bebas.`, score: 0 }
+        ],
+      },
+      { 
+        id: 'tka_sma_3_bind_28', packageId: 'tka_sma_3', category: 'BIND',
+        question: `Argumen utama para pendukung Teori Dorongan untuk menjawab kritik etis adalah ....`,
+        options: [
+          { id: 'A', text: `manipulasi dapat dibenarkan jika tujuannya adalah untuk keuntungan negara`, score: 0 },
+          { id: 'B', text: `setiap individu pada akhirnya tetap bertanggung jawab penuh atas pilihannya sendiri`, score: 0 },
+          { id: 'C', text: `intervensi semacam itu hanya efektif pada masyarakat dengan tingkat pendidikan rendah`, score: 0 },
+          { id: 'D', text: `desain lingkungan pilihan tidak mungkin netral, sehingga lebih baik diarahkan secara positif`, score: 3.33 },
+          { id: 'E', text: `dorongan halus jauh lebih hemat biaya dibandingkan mengubah hukum atau memberi insentif`, score: 0 }
+        ],
+      },
+      { 
+        id: 'tka_sma_3_bind_29', packageId: 'tka_sma_3', category: 'BIND',
+        question: `Sebuah perusahaan ingin mendorong karyawannya untuk lebih sering menggunakan tangga daripada lift demi kesehatan. Nilailah strategi-strategi berikut berdasarkan apakah tindakan tersebut tergolong nudge atau bukan!<br><br>Tentukan Nudge atau Bukan Nudge untuk setiap strategi berikut.`,
+        image: "https://i.ibb.co.com/FZPTq4L/image.png",
+        options: [
+          { id: 'A', text: `Nudge, Nudge, Bukan Nudge`, score: 0 },
+          { id: 'B', text: `Bukan Nudge, Nudge, Bukan Nudge`, score: 3.33 },
+          { id: 'C', text: `Bukan Nudge, Bukan Nudge, Nudge`, score: 0 },
+          { id: 'D', text: `Nudge, Bukan Nudge, Nudge`, score: 0 },
+          { id: 'E', text: `Bukan Nudge, Nudge, Nudge`, score: 0 }
+        ],
+      },
+      { 
+        id: 'tka_sma_3_bind_30', packageId: 'tka_sma_3', category: 'BIND',
+        question: `Manakah dari pernyataan berikut yang merupakan ciri-ciri dari sebuah "dorongan" atau nudge seperti yang dijelaskan dalam teks?<br><br>Pilihlah jawaban yang benar! (Jawaban benar lebih dari satu).`,
+        options: [
+          { id: 'A', text: `Tidak memaksa atau melarang pilihan tertentu.`, score: 1.11 },
+          { id: 'B', text: `Bertujuan untuk memengaruhi perilaku secara positif.`, score: 1.11 },
+          { id: 'C', text: `Menawarkan insentif ekonomi yang besar.`, score: 0 },
+          { id: 'D', text: `Bekerja dengan cara mengubah desain penyajian pilihan.`, score: 1.11 },
+          { id: 'E', text: `Membutuhkan persetujuan eksplisit dari orang yang dituju.`, score: 0 }
+        ],
+      },
+      { id: 'tka_sma_3_bing_01', packageId: 'tka_sma_3', category: 'BING', 
+        question: `<b>Read the following text to answer questions 1 to 3.</b><br><br>  <b>Why Joining Activities Outside Class Matters</b><br><br>Learning doesn’t stop when the school bell rings. In fact, some of the most valuable growth happens outside the classroom. Activities like playing on a sports team, joining a student club, doing volunteer work, or even holding a part-time job all fall under what we call extracurricular activities.<br><br>Far more than something to simply list on a résumé, these activities help students pick up practical skills, discover new passions, and build friendships. Getting involved also introduces you to people from different backgrounds, which can lead to lasting personal and professional connections.<br><br>Interestingly, taking part in such activities can even support your academic journey. According to Dr. Billy Wong from the University of Reading, students often develop skills like time management, communication, and critical thinking through extracurriculars—skills that directly improve how they perform in school.<br><br>On top of that, doing things you enjoy outside of your studies can help lower stress and lift your mood. A study by GITNUX showed that students who regularly engage in outside activities report lower levels of anxiety and depression—by around 8%.<br><br>Whether you're dancing, debating, painting, or playing football, extracurricular activities can make student life healthier, more rewarding, and more balanced.<br><br>According to the article, which of the following is one reason extracurricular activities are helpful in school?`,
+        options: [
+          { id: 'A', text: `They replace the need for classroom learning.`, score: 0 },
+          { id: 'B', text: `They make students more popular among peers.`, score: 0 },
+          { id: 'C', text: `They allow students to leave school earlier than usual.`, score: 0 },
+          { id: 'D', text: `They guarantee better exam results regardless of study habits.`, score: 0 },
+          { id: 'E', text: `They can help develop useful skills that also support academic performance.`, score: 3.33 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_02', packageId: 'tka_sma_3', category: 'BING', 
+        question: `What can be inferred about students who join extracurricular activities regularly?`,
+        options: [
+          { id: 'A', text: `They might experience better emotional health and reduced stress.`, score: 3.33 },
+          { id: 'B', text: `They often struggle to balance work and school.`, score: 0 },
+          { id: 'C', text: `They are likely to become less social over time.`, score: 0 },
+          { id: 'D', text: `They tend to skip academic tasks for hobbies.`, score: 0 },
+          { id: 'E', text: `They lose interest in academic goals.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_03', packageId: 'tka_sma_3', category: 'BING', 
+        question: `What is the author's overall attitude toward extracurricular activities?`,
+        options: [
+          { id: 'A', text: `Neutral—they have both good and bad sides.`, score: 0 },
+          { id: 'B', text: `Skeptical—they’re mainly just for boosting CVs.`, score: 0 },
+          { id: 'C', text: `Critical—they distract students from academics.`, score: 0 },
+          { id: 'D', text: `Cautiously optimistic—they may help if joined occasionally.`, score: 0 },
+          { id: 'E', text: `Supportive—they are useful for personal growth and well-being.`, score: 3.33 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_04', packageId: 'tka_sma_3', category: 'BING', 
+        question: `<b>Read the following text to answer questions 4 to 7.</b><br><br><b>How to Manage Stress Effectively as a Student</b><br><br>Feeling overwhelmed by classes, assignments, and daily responsibilities? You're not alone. Many students face pressure on multiple fronts, but there are practical steps you can take to reduce stress and feel more in control. Here's a guide to help you manage stress in simple, doable ways.<br><br>1. <b>Plan your time wisely.</b> Don't let a mountain of tasks leave you frozen. Try making a clear, written plan of what needs to be done. Break big assignments into smaller steps, prioritize what's most urgent, and set aside time each day not just for study—but for rest and fun too.<br><br>2. <b>Reframe the way you think.</b> Instead of seeing deadlines or exams as threats, try to view them as challenges you can rise to. Shifting your mindset toward growth can change how you experience stress. Focus on the relief and accomplishment you'll feel after a task is complete.<br><br>3. <b>Create a daily routine.</b> Students often react to scattered thoughts. Having a predictable routine—like waking up at the same time each day, including a short workout in the morning, and sticking to consistent meal or study times—can bring stability and reduce mental clutter.<br><br>4. <b>Unplug from social media.</b> Spending too much time scrolling can lead to unhealthy comparisons and stress. Set boundaries for your screen time by designating phone-free hours during your day. Use that time to recharge, reflect, or connect with people offline.<br><br>5. <b>Make time to laugh.</b> It's not just fun—laughter is scientifically proven to relieve stress by increasing oxygen flow and improving circulation. Watch a comedy special, call up that friend who always cracks you up, or do something silly that makes you smile.<br><br>What does the word <i>reframe</i> in “Reframe the way you think” most likely mean?`,
+        options: [
+          { id: 'A', text: `To change your perspective.`, score: 3.33 },
+          { id: 'B', text: `To hang a picture differently.`, score: 0 },
+          { id: 'C', text: `To identify stressful situations.`, score: 0 },
+          { id: 'D', text: `To copy what other people are doing.`, score: 0 },
+          { id: 'E', text: `To remove difficult tasks from your list.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_05', packageId: 'tka_sma_3', category: 'BING', 
+        question: `What is the main purpose of the text?`,
+        options: [
+          { id: 'A', text: `To advertise time-management products for students.`, score: 0 },
+          { id: 'B', text: `To give clear steps that help students reduce stress.`, score: 3.33 },
+          { id: 'C', text: `To explain common causes of stress in student life.`, score: 0 },
+          { id: 'D', text: `To describe different types of university routines.`, score: 0 },
+          { id: 'E', text: `To entertain students with jokes about stress.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_06', packageId: 'tka_sma_3', category: 'BING', 
+        question: `What can be inferred about the effect of social media on stress?`,
+        options: [
+          { id: 'A', text: `Comparisons on social media can increase stress levels.`, score: 3.33 },
+          { id: 'B', text: `Social media has no effect on student well-being.`, score: 0 },
+          { id: 'C', text: `Following educational accounts reduces stress.`, score: 0 },
+          { id: 'D', text: `Social media can improve focus during study.`, score: 0 },
+          { id: 'E', text: `Posting achievements helps lower anxiety.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_07', packageId: 'tka_sma_3', category: 'BING', 
+        question: `Which of the following best reflects the writer's attitude toward stress?`,
+        options: [
+          { id: 'A', text: `Stress should be ignored as part of a student's life.`, score: 0 },
+          { id: 'B', text: `Stress is always harmful and must be avoided entirely.`, score: 0 },
+          { id: 'C', text: `Stress is mostly caused by universities and cannot be solved.`, score: 0 },
+          { id: 'D', text: `Managing stress is only important for students with low grades.`, score: 0 },
+          { id: 'E', text: `Stress is natural, but it can be controlled through practical steps.`, score: 3.33 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_08', packageId: 'tka_sma_3', category: 'BING', 
+        question: `<b>Read the following text to answer questions 8 to 12.</b><br><br><b>The Wolf That Overheard</b><br><br>An old nurse was holding a little child who wouldn't stop wiggling and making noise. “Be quiet,” she said, “if you don't, I'll give you to the wolf!” The child, who didn’t understand, just kept on fussing.<br><br>A skinny wolf was walking quietly by the house and heard the nurse. When he heard his name, he quickly hid low by the window, his eyes shining. “Oh, I'm so lucky today!” he thought with a sly smile. “That child will cry soon, and I don't even need to spend so much energy hunting. All I need to do is wait.” So the wolf waited patiently by the window, his stomach grumbling in anticipation.<br><br>Time passed very slowly. The sun started to go down, making the sky orange and purple. Just as the wolf was starting to lose hope, a loud cry came from the window! The child was finally crying. The wolf's eyes lit up, and he jumped forward, wagging his tail happily, and peeked into the window.<br><br>But the nurse didn’t throw the child to him. Instead, she looked scared, and she quickly closed the window shut. She yelled for help, and soon, the big house dogs came running into the garden. “Oh no!” growled the wolf as he ran away, feeling tricked. “Shame on me for believing in a promise made behind my back!” He disappeared into the dark evening, a hungry animal who got fooled by a make-believe threat.<br><br>What is the main purpose of the text?`,
+        options: [
+          { id: 'A', text: `To compare wolves and dogs.`, score: 0 },
+          { id: 'B', text: `To inform about nursery rules.`, score: 0 },
+          { id: 'C', text: `To entertain readers with a moral story.`, score: 3.33 },
+          { id: 'D', text: `To explain how to take care of children.`, score: 0 },
+          { id: 'E', text: `To describe how wolves hunt in real life.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_09', packageId: 'tka_sma_3', category: 'BING', 
+        question: `Time passes slow as the sun went down and made the sky orange and purple.<br><br>Which of the following words/phrases is NOT grammatically correct?`,
+        options: [
+          { id: 'A', text: `Slow.`, score: 3.33 },
+          { id: 'B', text: `Made.`, score: 0 },
+          { id: 'C', text: `Passes.`, score: 0 },
+          { id: 'D', text: `Purple.`, score: 0 },
+          { id: 'E', text: `Went down.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_10', packageId: 'tka_sma_3', category: 'BING', 
+        question: `Which sentence shows that the wolf misunderstood the situation?`,
+        options: [
+          { id: 'A', text: `“Oh, I'm so lucky today!” he thought with a sly smile.`, score: 3.33 },
+          { id: 'B', text: `The child, who didn’t understand, just kept on fussing.`, score: 0 },
+          { id: 'C', text: `The sun started to go down, making the sky orange and purple.`, score: 0 },
+          { id: 'D', text: `She yelled for help, and soon, the big house dogs came running.`, score: 0 },
+          { id: 'E', text: `A skinny wolf was walking quietly by the house and heard the nurse.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_11', packageId: 'tka_sma_3', category: 'BING', 
+        question: `What is the moral message of the story?`,
+        options: [
+          { id: 'A', text: `Be careful what you wish for.`, score: 0 },
+          { id: 'B', text: `Always be kind to animals, or they will attack.`, score: 0 },
+          { id: 'C', text: `Children should always listen to the wolf's warning.`, score: 0 },
+          { id: 'D', text: `Wolves are always waiting to catch naughty children.`, score: 0 },
+          { id: 'E', text: `Don't believe in the things people say behind your back.`, score: 3.33 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_12', packageId: 'tka_sma_3', category: 'BING', 
+        question: `Which situation in real life is most similar to the story?`,
+        options: [
+          { id: 'A', text: `Parents threatening to call the police to scare a naughty child but not actually doing it.`, score: 3.33 },
+          { id: 'B', text: `A student asking the teacher to cancel class because of the weather.`, score: 0 },
+          { id: 'C', text: `A person getting lost on the way to school and meeting a wolf.`, score: 0 },
+          { id: 'D', text: `A child hiding under the window while playing hide-and-seek.`, score: 0 },
+          { id: 'E', text: `A zookeeper feeding lions at lunchtime.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_13', packageId: 'tka_sma_3', category: 'BING', 
+        question: `<b>Read the following text to answer questions 13 to 16.</b><br><br><b>Day at the Museum</b><br><br>Last Wednesday, our school held a special event at Ronggowarsito Museum. The 12th graders had the opportunity to act as tour guides, while the 10th graders acted as tourists. This event was part of their English learning program, helping them practice speaking skills while learning about history and culture. Everyone was excited as they gathered in front of the museum before the rehearsal began.<br><br>During the tour, the 12th-grade guides confidently explained and described various exhibits in English. They talked about ancient artifacts, traditional clothing, and historical events displayed in the museum. Some even shared interesting stories behind certain objects, making the tour more engaging. Meanwhile, the 10th graders listened attentively, asked questions, and interacted with the guides just like real tourists.<br><br>By the end of the event, both grades gained valuable experiences. The 12th graders improved their public speaking skills and confidence, while the 10th graders learned new things about Indonesian history. The teachers praised their efforts, and everyone felt proud of their achievements. It was a fun and educational day that strengthened our love for learning and teamwork.<br><br>If the school continues to hold events like this, what are two outcomes that could happen according to the text?<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        options: [
+          { id: 'A', text: `Students will be more confident in using English in real-world situations.`, score: 1.665 },
+          { id: 'B', text: `The museum will close down from the damages caused by the students.`, score: 0 },
+          { id: 'C', text: `The school may invite more guests or parents to attend future events.`, score: 0 },
+          { id: 'D', text: `The 10th graders will never want to visit a museum again.`, score: 0 },
+          { id: 'E', text: `Students will be able to immerse themselves in the museum.`, score: 1.665 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_14', packageId: 'tka_sma_3', category: 'BING', 
+        question: `How can the activity of being a tour guide be compared to being a tourist during the event?<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        options: [
+          { id: 'A', text: `Tourists were expected to memorize long explanations.`, score: 0 },
+          { id: 'B', text: `Guides and tourists had the exact same responsibilities.`, score: 0 },
+          { id: 'C', text: `Tourists did not learn anything compared to the guides.`, score: 0 },
+          { id: 'D', text: `Being a guide was more difficult because it involved speaking in public.`, score: 1.665 },
+          { id: 'E', text: `Guides had to prepare more, while tourists mostly listened and asked questions.`, score: 1.665 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_15', packageId: 'tka_sma_3', category: 'BING', 
+        question: `Choose the best connective to complete the following sentence.<br><br>The event was held in the museum ... they could also learn about history and culture while practicing their English skills.`,
+        options: [
+          { id: 'A', text: `while`, score: 0 },
+          { id: 'B', text: `so that`, score: 3.33 },
+          { id: 'C', text: `because`, score: 0 },
+          { id: 'D', text: `although`, score: 0 },
+          { id: 'E', text: `in order to`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_16', packageId: 'tka_sma_3', category: 'BING', 
+        question: `Which two expressions can replace the underlined adverb in the sentence: “...the 10th graders listened attentively.” (paragraph 2)?<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        options: [
+          { id: 'A', text: `While attending to other activities.`, score: 0 },
+          { id: 'B', text: `With full attention.`, score: 1.665 },
+          { id: 'C', text: `With hostility.`, score: 0 },
+          { id: 'D', text: `Very closely.`, score: 1.665 },
+          { id: 'E', text: `Very rudely.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_17', packageId: 'tka_sma_3', category: 'BING', 
+        question: `<b>Read the following dialogue to answer questions 17 and 18.</b><br><br><b>Olive:</b> Hey, Sofyan! Have you checked your TOEFL test result yet?<br><b>Sofyan:</b> Hi, Olive! Yes, I just checked it this morning. I'm still processing it though.<br><b>Olive:</b> Oh no, that sounds serious. What did you get?<br> <b>Sofyan:</b> I got a 555. I'm not sure if it’s enough for the scholarship to Australia. The requirement was at least 550, right?<br><b>Olive:</b> Yes, for most universities in Australia, 550 is the minimum. So, you're above that! Congratulations!<br> <b>Sofyan:</b> Thanks! But you know, some programs require even higher scores especially for research-based degrees. How about you?<br><b>Olive:</b> I got 585. I'm really relieved, but I'm still nervous about my next step. I'm worried about the interview.<br> <b>Sofyan:</b> Wow, Olive! That's a great score. You've always been good at English. I'm sure you'll do well in the interview, too.<br><b>Olive:</b> Thanks, Sofyan. But remember, your score is great, too. Plus, you've got excellent leadership and volunteer experience. Those are worth a lot for scholarships.<br><b>Sofyan:</b> Yeah, I hope the scholarship committee sees that. I really want to study environmental science in Melbourne.<br> <b>Olive:</b> Awesome! I applied to a teaching program in Sydney. Let’s keep pushing and supporting each other through this process.<br><b>Sofyan:</b> Definitely. No matter what, I'm proud of what we've achieved so far.<br><b>Olive:</b> Me, too. Let's prepare for the next step and hopefully, we'll both be in Australia next year!<br><br>What are Olive and Sofyan planning to do next?<br><br> <b>There is more than one answer. Click on every correct answer!</b>`,
+        options: [
+          { id: 'A', text: `Apply for jobs.`, score: 0 },
+          { id: 'B', text: `Change their study plans.`, score: 0 },
+          { id: 'C', text: `Take the TOEFL test again.`, score: 0 },
+          { id: 'D', text: `Prepare for the scholarship interview.`, score: 1.665 },
+          { id: 'E', text: `Keep supporting each other through the process.`, score: 1.665 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_18', packageId: 'tka_sma_3', category: 'BING', 
+        question: `Why does Olive feel nervous even after getting a good TOEFL score?<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        options: [
+          { id: 'A', text: `She is preparing for an interview.`, score: 1.665 },
+          { id: 'B', text: `She is worried about her friend's result.`, score: 0 },
+          { id: 'C', text: `She wants to change her study program.`, score: 0 },
+          { id: 'D', text: `She is anxious about the next selection step.`, score: 1.665 },
+          { id: 'E', text: `She thinks her score is below the requirement.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_19', packageId: 'tka_sma_3', category: 'BING', 
+        question: `<b>Read the following text to answer questions 19 to 22.</b><br><br> <b>The Colosseum</b><br><br> The Colosseum is known around the world to be one of the most iconic landmarks in Rome, Italy. Also known as the Flavian Amphitheater, this ancient structure was built nearly 2,000 years ago and once hosted thrilling gladiator battles, wild animal hunts, and dramatic public spectacles that drew tens of thousands of Roman citizens.<br><br>From the outside, the Colosseum is an architectural masterpiece, showcasing a blend of Roman engineering and artistry. Its grand oval shape and massive arches dominate the landscape, with weathered stone walls that have withstood the passage of centuries. Standing over 48 meters tall and stretching 189 meters long, it could accommodate up to 50,000 spectators in its prime.<br><br>Inside, rows of tiered seating surround what was once a sand-covered arena. Underground, beneath the arena’s grounds, there is a complex network of tunnels and chambers. These are where wild beasts and gladiators would wait before they were summoned. Though parts of the structure have crumbled over time due to earthquakes and looting, much of its majestic form still remains.<br><br> The Colosseum stands as a strong reminder of Roman history and a symbol of its past. It attracts millions of visitors from around the world each year, offering a glimpse into the grandeur and brutality of ancient Roman entertainment. Walking through its ruins evokes a deep sense of wonder and admiration for the civilization that once brought it to life.<br><br>What made the Colosseum a central part of Roman public life in ancient times?<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        options: [
+          { id: 'A', text: `It hosted public events such as battles and hunts.`, score: 1.665 },
+          { id: 'B', text: `It was used as a market for Roman merchants.`, score: 0 },
+          { id: 'C', text: `It attracted tens of thousands of spectators.`, score: 1.665 },
+          { id: 'D', text: `It served as a temple for worship.`, score: 0 },
+          { id: 'E', text: `It served as a royal palace.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_20', packageId: 'tka_sma_3', category: 'BING', 
+        question: `Which statements best describe the Colosseum’s architectural features?<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        options: [
+          { id: 'A', text: `Its height reaches over 48 meters.`, score: 1.665 },
+          { id: 'B', text: `It is made entirely of gold and marble.`, score: 0 },
+          { id: 'C', text: `It was built with modern steel and concrete.`, score: 0 },
+          { id: 'D', text: `Its walls have been completely reconstructed.`, score: 0 },
+          { id: 'E', text: `It has a grand oval shape and massive arches.`, score: 1.665 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_21', packageId: 'tka_sma_3', category: 'BING', 
+        question: `What can be found underneath the Colosseum’s main arena?<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        options: [
+          { id: 'A', text: `An underground system of tunnels and chambers.`, score: 1.665 },
+          { id: 'B', text: `Waiting areas for animals and gladiators.`, score: 1.665 },
+          { id: 'C', text: `A large garden and fountain.`, score: 0 },
+          { id: 'D', text: `A royal gallery for emperors.`, score: 0 },
+          { id: 'E', text: `Storage rooms for chariots.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_22', packageId: 'tka_sma_3', category: 'BING', 
+        question: `What emotional response might visitors experience when exploring the Colosseum today according to the text?<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        options: [
+          { id: 'A', text: `Fear of ancient superstitions.`, score: 0 },
+          { id: 'B', text: `Indifference to Roman history.`, score: 0 },
+          { id: 'C', text: `A sense of wonder at its architecture.`, score: 1.665 },
+          { id: 'D', text: `Admiration for ancient Roman civilization.`, score: 1.665 },
+          { id: 'E', text: `Amusement at the games once held there.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_23', packageId: 'tka_sma_3', category: 'BING', 
+        question: `<b>Read the following text to answer questions 23 to 25.</b><br><br><b>The Negative Impact of Using ChatGPT</b><br><br>ChatGPT is a popular tool that helps people write texts, find answers, and learn new things. While it can be helpful in many ways, there are also some negative impacts that we need to think about, especially for students and young users.<br><br>First, using ChatGPT too often can make people lazy to think. When students use it to do all their homework or assignments, they don’t practice their own writing or thinking skills. This can make it harder for them to learn and improve because they depend too much on the tool.<br><br>Second, ChatGPT is not always 100% correct. Sometimes, the answers or information it gives are not true or are outdated. If users do not check the facts, they might believe something that is wrong. This can lead to confusion or problems, especially at school or at work.<br><br>Third, using ChatGPT without understanding the topic can stop people from developing real knowledge. Learning is more than just copying answers. It is about understanding, asking questions, and finding solutions by ourselves.<br><br>In conclusion, even though ChatGPT can be a useful tool, we must use it wisely. It should support our learning, not replace our thinking. We need to stay active in learning and always double-check the information we get from any source, including ChatGPT.<br><br>According to the text, what may happen if students rely too much on ChatGPT?<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        options: [
+          { id: 'A', text: `They will stop going to school.`, score: 0 },
+          { id: 'B', text: `They will get better grades in all subjects.`, score: 0 },
+          { id: 'C', text: `They will be more creative and independent.`, score: 0 },
+          { id: 'D', text: `They might become lazy to think on their own.`, score: 1.665 },
+          { id: 'E', text: `Their writing and thinking skills may not improve.`, score: 1.665 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_24', packageId: 'tka_sma_3', category: 'BING', 
+        question: `What should users do to avoid the negative impact of ChatGPT?<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        options: [
+          { id: 'A', text: `Only use it in offline mode.`, score: 0 },
+          { id: 'B', text: `Use it for every school task.`, score: 0 },
+          { id: 'C', text: `Ask ChatGPT to do their final exam.`, score: 0 },
+          { id: 'D', text: `Use it to support their learning, not replace it.`, score: 1.665 },
+          { id: 'E', text: `Check the facts and information given by ChatGPT.`, score: 1.665 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_25', packageId: 'tka_sma_3', category: 'BING', 
+        question: `Which of the following best shows the writer's opinion about ChatGPT?<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        options: [
+          { id: 'A', text: `ChatGPT is dangerous and should not be used.`, score: 0 },
+          { id: 'B', text: `ChatGPT is helpful but must be used carefully.`, score: 1.665 },
+          { id: 'C', text: `ChatGPT can support learning if used wisely.`, score: 1.665 },
+          { id: 'D', text: `ChatGPT is only for adults, not for students.`, score: 0 },
+          { id: 'E', text: `ChatGPT is a perfect tool for students.`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_26', packageId: 'tka_sma_3', category: 'BING', 
+        question: `<b>Read the following texts.</b><br><br> <b>Text 1 — Cleaning a Touch Screen</b><br><br>1. Select a microfiber cleaning cloth for the best result. Some devices come with a cleaning cloth. Alternatively, you may use a cleaning cloth for a pair of glasses.<br>2. Turn off the device before cleaning, as it is usually easier to see where to clean when the device is turned off.<br>3. Brush the screen with the microfiber cloth in small circles. This will eliminate most dirt that can come off easily.<br>4. If some dirt or smudges remain, lightly dampen a cotton cloth and gently wipe the screen using circular motions.<br>5. Finish by giving the screen one final wipe with the microfiber cloth, but don’t rub too hard. If there’s any leftover moisture, just let it air dry. Always avoid applying too much pressure when cleaning the screen.<br><br><b>Text 2 — How to Recover a Wet Phone</b><br><br>1. Quickly take the phone out of the water.<br>2. Grab some paper towels or a soft cloth and place the phone on them while you remove the battery (if the battery is detachable).<br>3. Take out any other parts, like memory cards or protective covers.<br>4. Gently dry the phone using a soft towel or cloth.<br>5. Leave the phone in a container of raw rice overnight. The rice can absorb some of the phone's residual moisture.<br>6. Charge the phone and see if it works. If it doesn’t, bring it to an authorized dealer for a check-up.<br><br><b>Determine which statements are TRUE.</b><br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        image: "https://i.ibb.co.com/xt1SvDpq/image.png",
+        options: [
+          { id: 'A', text: `False, True, True`, score: 0 },
+          { id: 'B', text: `True, False, True`, score: 0 },
+          { id: 'C', text: `True, True, False`, score: 3.33 },
+          { id: 'D', text: `False, True, False`, score: 0 },
+          { id: 'E', text: `False, False, True`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_27', packageId: 'tka_sma_3', category: 'BING', 
+        question: `Based on Text 1 and Text 2, determine which statements are FACTS.<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        image: "https://i.ibb.co.com/9CYjJwj/image.png",
+        options: [
+          { id: 'A', text: `Fact, Opinion, Opinion`, score: 0 },
+          { id: 'B', text: `Opinion, Opinion, Fact`, score: 0 },
+          { id: 'C', text: `Fact, Fact, Opinion`, score: 3.33 },
+          { id: 'D', text: `Opinion, Fact, Opinion`, score: 0 },
+          { id: 'E', text: `Fact, Opinion, Fact`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_28', packageId: 'tka_sma_3', category: 'BING', 
+        question: `<b>Read the following text.</b><br><br><b>The Legend of Lutung Kasarung</b><br><br>The tale of Lutung Kasarung, a well-known legend from West Java, centers around a princess named Purbasari and a magical black monkey. Purbasari was gentle and beautiful, but her envious sister, Purbararang, desired to take her place. One day, Purbararang deceived the king into banishing Purbasari to the forest.<br><br>Alone and sorrowful in the forest, Purbasari met a mysterious black monkey named Lutung Kasarung. He was not just any monkey. He possessed magical abilities. Lutung Kasarung cared for Purbasari and even created a lovely lake with enchanted water that healed her. Over time, she became more beautiful than ever.<br><br>When Purbararang heard about this, she grew furious and challenged Purbasari to a competition to see who had the most handsome partner. Purbararang came with her fiancé, a charming prince. Unsure of what to do, Purbasari chose Lutung Kasarung. To everyone's surprise, he transformed into a strikingly handsome prince. The crowd was stunned, and Purbasari won the contest.<br><br>Eventually, the king realized his error and brought Purbasari back to the palace. Purbararang expressed remorse for what she had done. Purbasari and the prince, who was actually a divine being, lived happily ever after. The story conveys a timeless message: kindness and patience are always rewarded in the end.<br><br><b>Determine which statements are TRUE.</b><br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        image: "https://i.ibb.co.com/Jj0SC3YT/image.png",
+        options: [
+          { id: 'A', text: `False, True, True`, score: 0 },
+          { id: 'B', text: `True, False, False`, score: 3.33 },
+          { id: 'C', text: `True, True, False`, score: 0 },
+          { id: 'D', text: `False, True, False`, score: 0 },
+          { id: 'E', text: `False, False, True`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_29', packageId: 'tka_sma_3', category: 'BING', 
+        question: `Based on the text, determine which statements are FACTS.<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        image: "https://i.ibb.co.com/gLsNgV7H/image.png",
+        options: [
+          { id: 'A', text: `Fact, Opinion, Opinion`, score: 0 },
+          { id: 'B', text: `Opinion, Opinion, Fact`, score: 0 },
+          { id: 'C', text: `Fact, Fact, Opinion`, score: 0 },
+          { id: 'D', text: `Opinion, Fact, Fact`, score: 3.33 },
+          { id: 'E', text: `Fact, Opinion, Fact`, score: 0 },
+        ],
+      },
+      { id: 'tka_sma_3_bing_30', packageId: 'tka_sma_3', category: 'BING', 
+        question: `<b>The following poster is for question 30.</b><br><br> Based on the poster, determine which statements are OPINIONS.<br><br><b>There is more than one answer. Click on every correct answer!</b>`,
+        image: "https://i.ibb.co.com/LzXh5Nsv/image.png",
+        options: [
+          { id: 'A', text: `Fact, Opinion, Opinion`, score: 0 },
+          { id: 'B', text: `Opinion, Opinion, Fact`, score: 3.33 },
+          { id: 'C', text: `Fact, Fact, Opinion`, score: 0 },
+          { id: 'D', text: `Opinion, Fact, Fact`, score: 0 },
+          { id: 'E', text: `Fact, Opinion, Fact`, score: 0 },
+
+        ],
+      },
+
+        { id:'tka_sma_3_mtkl_01', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Perhatikan matriks berikut! \\[ F= \\begin{pmatrix} 2 & 0\\\\ 0 & \\frac{1}{2} \\end{pmatrix} \\] Invers dari matriks \\(F\\) adalah ....`, 
+        options: [
+          { id:'A', text:`\\[ \\begin{pmatrix} 1 & 0\\\\ 0 & 2 \\end{pmatrix} \\]`, score: 0 },
+          { id:'B', text:`\\[ \\begin{pmatrix} -1 & 0\\\\ 0 & -2 \\end{pmatrix} \\]`, score: 0 },
+          { id:'C', text:`\\[ \\begin{pmatrix} 2 & 0\\\\ 0 & 1 \\end{pmatrix} \\]`, score: 0 },
+          { id:'D', text:`\\[ \\begin{pmatrix} -\\frac{1}{2} & 0\\\\ 0 & -2 \\end{pmatrix} \\]`, score: 0 },
+          { id:'E', text:`\\[ \\begin{pmatrix} \\frac{1}{2} & 0\\\\ 0 & 2 \\end{pmatrix} \\]`, score: 3.33 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_02', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Pak Andi memiliki beberapa sapi dan kambing. Semua hewan ternaknya selalu diberikan pakan berupa campuran rumput gajah dan rumput gamal. Setiap hari, ia selalu menyediakan 38 kg rumput gajah dan 34 kg rumput gamal untuk seluruh kambing dan sapi miliknya tanpa sisa. Jika banyaknya sapi dan kambing yang dipelihara oleh Pak Andi berturut-turut adalah \\(x\\) dan \\(y\\), maka \\[ \\begin{pmatrix} x\\\\ y \\end{pmatrix} =\\cdots \\]`, 
+        image:"https://i.ibb.co.com/wZKdbwCS/image.png", 
+        options: [
+          { id:'A', text:`\\[ \\begin{pmatrix} -1 & 1\\\\ 10 & -5 \\end{pmatrix} \\begin{pmatrix} 19\\\\ 34 \\end{pmatrix} = \\begin{pmatrix} 15\\\\ 20 \\end{pmatrix} \\]`, score: 0 },
+          { id:'B', text:`\\[ \\begin{pmatrix} 10 & -10\\\\ -1 & 2 \\end{pmatrix} \\begin{pmatrix} 38\\\\ 34 \\end{pmatrix} = \\begin{pmatrix} 4\\\\ 3 \\end{pmatrix} \\]`, score: 0 },
+          { id:'C', text:`\\[ \\begin{pmatrix} -\\frac{1}{10} & \\frac{2}{10}\\\\ 1 & -1 \\end{pmatrix} \\begin{pmatrix} 34\\\\ 38 \\end{pmatrix} = \\begin{pmatrix} 4\\\\ 3 \\end{pmatrix} \\]`, score: 0 },
+          { id:'D', text:`\\[ \\begin{pmatrix} -\\frac{1}{10} & \\frac{2}{10}\\\\ 1 & -1 \\end{pmatrix} \\begin{pmatrix} 38\\\\ 34 \\end{pmatrix} = \\begin{pmatrix} 3\\\\ 4 \\end{pmatrix} \\]`, score: 0 },
+          { id:'E', text:`\\[ \\begin{pmatrix} -\\frac{1}{5} & \\frac{1}{5}\\\\ 2 & -1 \\end{pmatrix} \\begin{pmatrix} 19\\\\ 34 \\end{pmatrix} = \\begin{pmatrix} 3\\\\ 4 \\end{pmatrix} \\]`, score: 3.33 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_03', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Sebuah pabrik minuman tradisional memproduksi tiga jenis minuman yaitu wedang jahe (WJ), beras kencur (BK), dan kunir asem (KA). Dalam proses produksinya, digunakan tiga bahan utama yaitu jahe (J) dalam gram, gula merah (GM) dalam gram, dan air (A) dalam mililiter. Setiap botol minuman memerlukan bahan sebagai berikut. \\[ \\begin{bmatrix} J & GM & A \\end{bmatrix} \\begin{bmatrix} 20 & 15 & 50 \\\\ 10 & 25 & 40 \\\\ 12 & 8 & k \\end{bmatrix} \\] Pada suatu hari pabrik tersebut menerima pesanan sebagai berikut. \\[ \\begin{bmatrix} WJ \\\\ BK \\\\ KA \\end{bmatrix} = \\begin{bmatrix} 100 \\\\ 120 \\\\ 80 \\end{bmatrix} \\] Jumlah bahan baku yang digunakan dalam proses pembuatan setiap minuman adalah: \\[ \\begin{bmatrix} J \\\\ GM \\\\ A \\end{bmatrix} = \\begin{bmatrix} 7800 \\\\ 7200 \\\\ 5360 \\end{bmatrix} \\] Banyak air yang dibutuhkan untuk memproduksi satu botol kunir asem adalah ....`, options: [
+          { id:'A', text:'30 ml', score: 0 },
+          { id:'B', text:'35 ml', score: 0 },
+          { id:'C', text:'40 ml', score: 3.33 },
+          { id:'D', text:'45 ml', score: 0 },
+          { id:'E', text:'50 ml', score: 0 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_04', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Seorang pemilik hotel mengelola 3 hotel yang berada pada kota yang berbeda. Hotel tersebut memiliki konsep dan tipe kamar yang sama yaitu Standard Room, Deluxe Room, dan Suite Room, dengan kapasitas dan harga per malam seperti pada gambar. Pemilik hotel akan melakukan perhitungan pendapatan yang diperoleh dari ketiga hotel tersebut. Bagaimana kondisi pendapatan ketiga hotel tersebut dalam 1 hari jika semua tipe kamar terisi penuh? <b>Pilihlah semua jawaban yang benar! Jawaban benar lebih dari satu.</b>`, 
+        image:"https://i.ibb.co.com/xKrLZmmq/image.png", 
+        options: [
+          { id:'A', text:'Pendapatan Hotel A dan Hotel C sama besar.', score: 0 },
+          { id:'B', text:'Pendapatan Hotel B lebih besar daripada Hotel A.', score: 0 },
+          { id:'C', text:'Pendapatan paling besar diperoleh dari Hotel C.', score: 1.665 },
+          { id:'D', text:'Masing-masing hotel memiliki selisih pendapatan yang sama besar.', score: 0 },
+          { id:'E', text:'Pendapatan yang diperoleh dari ketiga hotel tersebut lebih dari Rp20.000.000.', score: 1.665 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_05', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Di manakah koordinat titik perpotongan grafik fungsi \\[ f(x)=x^3+3x^2-10x-24 \\] terhadap sumbu \\(X\\)? <b>Pilihlah semua jawaban yang benar! Jawaban benar lebih dari satu.</b>`, 
+        options: [
+          { id:'A', text:'$(-2,0)$', score: 1.11 },
+          { id:'B', text:'$(-1,0)$', score: 0 },
+          { id:'C', text:'$(3,0)$', score: 1.11 },
+          { id:'D', text:'$(-4,0)$', score: 1.11 },
+          { id:'E', text:'$(5,0)$', score: 0 }
+        ]
+      },
+        { id:'tka_sma_3_mtkl_06', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Diketahui suku banyak \\[ f(x)=x^4+ax^3+bx^2+x-6 \\] apabila dibagi oleh \\[ x^2+x+1 \\] menghasilkan sisa \\[ 5x-1. \\] Nilai dari \\(a+b\\) = ....`,
+        options: [
+          { id:'A', text:'11', score: 0 },
+          { id:'B', text:'5', score: 0 },
+          { id:'C', text:'$-1$', score: 3.33 },
+          { id:'D', text:'$-5$', score: 0 },
+          { id:'E', text:'$-7$', score: 0 }
+        ]
+     },
+        { id:'tka_sma_3_mtkl_07', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Sebuah drum bahan bakar logam mengalami penambahan kapasitas volume saat terkena panas, yang dapat dinyatakan dalam fungsi berikut. \\[ V(T)=0,05T^3+0,4T^2+20T \\] dengan \\(T\\) adalah suhu dalam derajat Celsius dan \\(V(T)\\) adalah penambahan volume dalam liter. Apabila terdapat 10 drum dengan jenis dan ukuran yang sama, total penambahan volume dari drum-drum tersebut ketika terkena panas dengan suhu yang sama dapat dinyatakan dengan ....`, 
+        options: [
+          { id:'A', text:'$50T^3+40T^2+200T$', score: 0 },
+          { id:'B', text:'$50T^3+4T^2+200T$', score: 0 },
+          { id:'C', text:'$5T^3+4T^2+200T$', score: 0 },
+          { id:'D', text:'$0,5T^3+4T^2+200T$', score: 3.33 },
+          { id:'E', text:'$0,5T^3+0,4T^2+200T$', score: 0 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_08', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Sebuah perusahaan menawarkan saham kepada pembeli. Perusahaan menyiapkan modal saham yang akan dijual dan dapat dinyatakan sebagai fungsi \\[ f(x)=x^3-70x^2-600x+74.000 \\] dengan nilai \\(f(x)\\) dalam jutaan rupiah dan \\(x\\) menyatakan banyak saham dalam satuan unit saham. Apabila modal saham yang dimiliki perusahaan tersebut adalah 2 miliar atau 2.000 juta, tentukan Mungkin atau Tidak Mungkin perusahaan dapat menjual sejumlah unit saham berikut! Tentukan Benar atau Salah untuk setiap pernyataan.`, 
+        image: "https://i.ibb.co.com/qYF1WPsm/image.png",
+        options: [
+          { id:'A', text:'Salah, Benar, Benar', score: 3.33 },
+          { id:'B', text:'Benar, Benar, Benar', score: 0 },
+          { id:'C', text:'Salah, Benar, Salah', score: 0 },
+          { id:'D', text:'Benar, Salah, Benar', score: 0 },
+          { id:'E', text:'Benar, Salah, Salah', score: 0 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_09', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Populasi kelinci di suatu pulau dimodelkan dengan fungsi eksponensial, yaitu \\[ K(t)=4\\cdot2^{\\frac{t}{4}} \\] dengan \\(t\\) menyatakan waktu dalam satuan tahun dan \\(K(t)\\) menyatakan populasi dalam ribu ekor. Bagaimana interpretasi yang tepat mengenai model eksponensial populasi kelinci tersebut? Tentukan Benar atau Salah untuk setiap pernyataan.`, 
+        image: "https://i.ibb.co.com/LhXZ03R6/image.png",
+        options: [
+          { id:'A', text:'Salah, Benar, Salah', score: 3.33 },
+          { id:'B', text:'Benar, Benar, Salah', score: 0 },
+          { id:'C', text:'Salah, Salah, Salah', score: 0 },
+          { id:'D', text:'Benar, Salah, Benar', score: 0 },
+          { id:'E', text:'Benar, Salah, Salah', score: 0 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_10', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Seorang peneliti lingkungan melakukan pengamatan terhadap pertumbuhan tanaman eceng gondok di beberapa danau sekitar wilayah X. Pengamatan dilakukan selama 3 tahun dan hasil menunjukkan bahwa pertumbuhan eceng gondok dapat dimodelkan dengan fungsi seperti pada gambar. (gambar di bawah) <br><br>Setelah 3 tahun pengamatan, peneliti mencatat luas area yang tertutupi tanaman eceng gondok pada beberapa wilayah perairan. (gambar di bawah) <br><br>Berdasarkan data tersebut, wilayah perairan manakah dengan luas area yang tertutupi tanaman eceng gondok lebih dari 49 m² pada awal pengamatan? <b>Pilihlah semua jawaban yang benar!</b>`, 
+        image: "https://i.ibb.co.com/Lzdh7Z8b/image.png", 
+        options: [
+          { id:'A', text:'Danau A', score: 0 },
+          { id:'B', text:'Danau B', score: 0 },
+          { id:'C', text:'Danau C', score: 1.11 },
+          { id:'D', text:'Danau D', score: 1.11 },
+          { id:'E', text:'Danau E', score: 1.11 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_11', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Grafik berikut menyatakan perubahan kedalaman air laut di sebuah teluk. Pada grafik tersebut, \\(y\\) menyatakan kedalaman air laut dalam meter, \\(t\\) dalam jam, serta \\(a\\) dan \\(b\\) adalah konstanta. Berkenaan dengan nilai \\(t\\) pada grafik, nilai \\(t=6\\) menyatakan 6 jam setelah pukul 00.00, demikian pula untuk nilai \\(t\\) lainnya. Waktu saat kedalaman air laut mencapai 12,3 meter untuk ketiga kalinya setelah pukul 00.00 adalah ....`, 
+        image: "https://i.ibb.co.com/ksxh3zPQ/image.png", 
+        options: [
+          { id:'A', text:'3 jam', score: 0 },
+          { id:'B', text:'9 jam', score: 0 },
+          { id:'C', text:'10 jam', score: 0 },
+          { id:'D', text:'12 jam', score: 0 },
+          { id:'E', text:'15 jam', score: 3.33 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_12', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Diketahui vektor \\[ \\overrightarrow{AB}=\\begin{pmatrix} 2m\\\\ m+3\\\\ m \\end{pmatrix} \\] Jika panjang vektor \\(\\overrightarrow{AB}=9\\) satuan panjang, maka nilai \\(m\\) yang memenuhi vektor \\(\\overrightarrow{AB}\\) adalah ....`, 
+        options: [
+          { id:'A', text:'$-4$ atau $-3$', score: 0 },
+          { id:'B', text:'$-4$ atau $3$', score: 3.33 },
+          { id:'C', text:'$-3$ atau $4$', score: 0 },
+          { id:'D', text:'$3$ atau $4$', score: 0 },
+          { id:'E', text:'$4$ atau $3$', score: 0 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_13', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Diketahui trapesium sama kaki \\(ABCD\\) dengan \\(AD=BC\\) dan titik \\(A(0,0)\\). Vektor-vektor posisi pembentuk trapesium adalah \\[ \\overrightarrow{AD}=\\begin{pmatrix} 1\\\\ 4 \\end{pmatrix}, \\qquad \\overrightarrow{AB}=\\begin{pmatrix} 6\\\\ 0 \\end{pmatrix} \\] dan \\[ \\overrightarrow{BC}=\\begin{pmatrix} a\\\\ b \\end{pmatrix}. \\] Nilai dari \\(a^2+2b\\) = ....`, 
+        options: [
+          { id:'A', text:'5', score: 0 },
+          { id:'B', text:'7', score: 0 },
+          { id:'C', text:'9', score: 0 },
+          { id:'D', text:'10', score: 3.33 },
+          { id:'E', text:'13', score: 0 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_14', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Sebuah kereta api sedang melaju dengan kecepatan konstan pada sebuah lintasan lurus dari stasiun A sampai stasiun E. Diketahui koordinat stasiun A dan E (dalam km) berturut-turut adalah \\[ A(2,3,5) \\] dan \\[ E(11,6,8). \\] Perhatikan gambar yang menggambarkan waktu tempuh kereta tersebut antarstasiun. Manakah pasangan stasiun yang jaraknya kurang dari 3,5 km? <b>Pilihlah semua jawaban yang benar!</b>`, 
+        image: "https://i.ibb.co.com/bjMqC3QW/image.png", 
+        options: [
+          { id:'A', text:'AB', score: 0 },
+          { id:'B', text:'BC', score: 1.11 },
+          { id:'C', text:'CD', score: 1.11 },
+          { id:'D', text:'DE', score: 1.11 },
+          { id:'E', text:'CE', score: 0 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_15', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Perhatikan gambar lingkaran berikut. Diameter lingkaran pada gambar adalah 4 satuan. Persamaan lingkaran yang sepusat dengan lingkaran pada gambar tersebut adalah ....`, 
+        image: "https://i.ibb.co.com/JRHCtcCj/image.png", 
+        options: [
+          { id:'A', text:'$x^2+6x+y^2-8y+16=0$', score: 3.33 },
+          { id:'B', text:'$x^2-6x+y^2-8y+21=0$', score: 0 },
+          { id:'C', text:'$x^2+6x+y^2+8y+16=0$', score: 0 },
+          { id:'D', text:'$x^2-8x+y^2-6y+16=0$', score: 0 },
+          { id:'E', text:'$x^2+8x+y^2-6y+21=0$', score: 0 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_16', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Perhatikan gambar berikut. Tentukan semua koordinat titik singgung lingkaran dari garis-garis singgung lingkaran yang tegak lurus terhadap garis \\(f\\). <b>Pilihlah semua jawaban yang benar!</b>`, 
+        image: "https://i.ibb.co.com/5XgWfKM5/image.png", 
+        options: [
+          { id:'A', text:'$(3,1)$', score: 0 },
+          { id:'B', text:'$(1,-5)$', score: 1.665 },
+          { id:'C', text:'$(-1,5)$', score: 0 },
+          { id:'D', text:'$(3,-1)$', score: 1.665 },
+          { id:'E', text:'$(-3,-1)$', score: 0 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_17', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Suatu rumah makan terdapat gambar rambu lalu lintas. Gambarnya seperti gambar rambu lalu lintas balai pertolongan pertama, namun tidak sama persis. Pemilik rumah makan ingin membuat rambu tersebut dalam jumlah banyak untuk cabang yang baru dan cat yang dibeli dalam ukuran yang sama. Cat warna apakah yang lebih banyak digunakan dibanding cat warna hitam? <b>Pilihlah semua jawaban yang benar. Jawaban benar lebih dari satu.</b>`, 
+        image: "https://i.ibb.co.com/WW0qTghb/image.png", 
+        options: [
+          { id:'A', text:'Setengah hitam dan biru.', score: 1.11 },
+          { id:'B', text:'Setengah hitam dan merah.', score: 1.11 },
+          { id:'C', text:'Setengah hitam dan putih.', score: 0 },
+          { id:'D', text:'Biru dan putih.', score: 0 },
+          { id:'E', text:'Biru dan merah.', score: 1.11 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_18', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Pak Baskara akan membuat daun pintu dengan ornamen kaca patri berbentuk bulat di tengahnya. Kerangka ornamen terbuat dari logam yang berfungsi untuk menempelkan potongan-potongan kaca patri. Beliau ingin memilih logam yang pas. Maksud pas di sini adalah cukup untuk membuat kerangka dan sisanya tidak lebih dari 1 meter. Berikut ini adalah jenis logam dan panjangnya yang dapat dipilih Pak Baskara untuk membuat kerangka ornamen. Untuk logam A = 4m, logam B = 5m, logam C = 6,5m. Tentukan Benar atau Salah untuk setiap pernyataan berikut. Tentukan apakah pilihan logam berikut Pas atau Tidak Pas. (√2 = 1,4)`, 
+        image: "https://i.ibb.co.com/JjnJTrgk/image.png", 
+        options: [
+          { id:'A', text:'Salah, Salah, Benar', score: 3.33 },
+          { id:'B', text:'Benar, Salah, Benar', score: 0 },
+          { id:'C', text:'Salah, Benar, Salah', score: 0 },
+          { id:'D', text:'Benar, Benar, Salah', score: 0 },
+          { id:'E', text:'Salah, Benar, Benar', score: 0 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_19', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Apabila garis \\[ ax+y-9=0 \\] dan \\[ x+by+6=0 \\] dicerminkan terhadap garis \\(y=x\\) kemudian dilanjutkan translasi \\[ T=\\begin{pmatrix} 1\\\\ -1 \\end{pmatrix}, \\] menghasilkan bayangan dengan persamaan berturut-turut \\[ x+2y-8=0 \\] dan \\[ 2x-y-9=0. \\] Nilai \\(2a-b\\) = ....`, 
+        options: [
+          { id:'A', text:'$-6$', score: 0 },
+          { id:'B', text:'$-2$', score: 0 },
+          { id:'C', text:'0', score: 0 },
+          { id:'D', text:'2', score: 0 },
+          { id:'E', text:'6', score: 3.33 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_20', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Lingkaran \\(L\\) memiliki pusat di \\((-5,3)\\) dan jari-jari 2. Lingkaran \\(L'\\) merupakan bayangan lingkaran \\(L\\) setelah dilakukan translasi \\(T\\). Lingkaran \\(L''\\) dengan persamaan \\[ (x+4)^2+(y-4)^2=16 \\] merupakan bayangan lingkaran \\(L'\\) setelah dilakukan dilatasi berpusat di \\(O(0,0)\\) dengan faktor skala tertentu. Pernyataan yang benar mengenai translasi \\(T\\) dan faktor skala dilatasi tersebut adalah ....`, 
+        options: [
+          { id:'A', text:`\\[ T=\\begin{pmatrix} 3\\\\ -1 \\end{pmatrix} \\quad\\text{dan faktor skala dilatasi }8 \\]`, score: 0 },
+          { id:'B', text:`\\[ T=\\begin{pmatrix} 3\\\\ -1 \\end{pmatrix} \\quad\\text{dan faktor skala dilatasi }4 \\]`, score: 0 },
+          { id:'C', text:`\\[ T=\\begin{pmatrix} 3\\\\ -1 \\end{pmatrix} \\quad\\text{dan faktor skala dilatasi }2 \\]`, score: 3.33 },
+          { id:'D', text:`\\[ T=\\begin{pmatrix} 1\\\\ 1 \\end{pmatrix} \\quad\\text{dan faktor skala dilatasi }2 \\]`, score: 0 },
+          { id:'E', text:`\\[ T=\\begin{pmatrix} 1\\\\ 1 \\end{pmatrix} \\quad\\text{dan faktor skala dilatasi }8 \\]`, score: 0 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_21', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Garis \\(l\\) merupakan bayangan garis \\[ 3x+2y=6 \\] setelah dirotasikan sebesar \\(90^\\circ\\) berlawanan arah jarum jam dengan pusat rotasi \\((2,0)\\). Manakah koordinat titik berikut yang terletak pada garis \\(l\\)? <b>Pilihlah semua jawaban yang benar.</b>`, 
+        options: [
+          { id:'A', text:'$(-3,-2)$', score: 0 },
+          { id:'B', text:'$(-2,-1)$', score: 0 },
+          { id:'C', text:'$(1,2)$', score: 0 },
+          { id:'D', text:'$(2,0)$', score: 1.665 },
+          { id:'E', text:'$(5,2)$', score: 1.665 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_22', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Nilai dari \\[ \\lim_{x\\to3} \\frac{x^3-3x^2+2x+1}{5+3x-9x^2} =\\cdots \\]`, 
+        options: [
+          { id:'A', text:'$-\\frac{7}{67}$', score: 3.33 },
+          { id:'B', text:'$-\\frac{6}{67}$', score: 0 },
+          { id:'C', text:'$\\frac{6}{76}$', score: 0 },
+          { id:'D', text:'$\\frac{7}{67}$', score: 0 },
+          { id:'E', text:'$\\frac{7}{76}$', score: 0 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_23', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Roni, penjual nasi goreng, menjual dagangannya sebanyak \\(P\\) porsi dan memperoleh keuntungan (dalam jutaan rupiah) yang dinyatakan dengan fungsi \\[ K(p)=\\frac{9p^2+2p+10}{3p^2+3p+2} \\] Keuntungan yang akan diperoleh Roni apabila ia menjual nasi goreng dengan jumlah porsi sangat banyak adalah ....`, 
+        options: [
+          { id:'A', text:'Rp2.000.000,00', score: 0 },
+          { id:'B', text:'Rp3.000.000,00', score: 3.33 },
+          { id:'C', text:'Rp5.000.000,00', score: 0 },
+          { id:'D', text:'Rp9.000.000,00', score: 0 },
+          { id:'E', text:'Rp10.000.000,00', score: 0 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_24', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Sebuah setengah lingkaran dengan diameter \\(AB\\) terletak pada segitiga sama kaki \\(ABC\\) sehingga membentuk daerah menyerupai kerucut es krim seperti pada gambar berikut. Jika luas segitiga \\(ABC\\) dinyatakan dengan \\(X\\) dan luas setengah lingkaran dinyatakan dengan \\(Y\\), manakah pernyataan berikut yang benar mengenai nilai \\[ \\lim_{\\theta\\to\\pi}\\frac{X}{Y}? \\] <b>Pilihlah semua jawaban yang benar!</b>`, 
+        image: "https://i.ibb.co.com/fYWHh0NB/image.png", 
+        options: [
+          { id:'A', text:'Besar jari-jari mempengaruhi nilai limit.', score: 0 },
+          { id:'B', text:'Besar sudut tidak mempengaruhi nilai limit.', score: 0 },
+          { id:'C', text:'Nilai $\\frac{X}{Y}$ selalu sama untuk berapa pun $\\theta$.', score: 0 },
+          { id:'D', text:'$\\displaystyle\\lim_{\\theta\\to\\frac{\\pi}{6}}\\frac{X}{Y}=\\frac{2}{\\pi}$', score: 0 },
+          { id:'E', text:'Jika $\\theta=\\pi$, maka $\\frac{X}{Y}=0$.', score: 3.33 }
+        ] 
+      },
+        { id:'tka_sma_3_mtkl_25', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Nilai \\[ \\lim_{x\\to3} \\frac{1-\\cos(6x-18)}{\\left(x-\\frac{9}{x}\\right)\\sin(6x-18)} =\\cdots \\]`, 
+        options: [
+          { id:'A', text:'$-\\frac{3}{2}$', score: 0 },
+          { id:'B', text:'$-\\frac{2}{3}$', score: 0 },
+          { id:'C', text:'0', score: 0 },
+          { id:'D', text:'$\\frac{2}{3}$', score: 0 },
+          { id:'E', text:'$\\frac{3}{2}$', score: 3.33 }
+        ] 
+      },  
+        { id:'tka_sma_3_mtkl_26', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Diketahui fungsi \\(f(x)=\\begin{cases} ax^2-x+a-1, & \\text{untuk }x<1 \\\\ 2\\sqrt{x+a}, & \\text{untuk }x\\geq1 \\end{cases}\\) dengan \\(a\\neq0\\). Jika \\(\\lim_{x\\to1}f(x)\\) merupakan bilangan riil, nilai dari \\(f(-2)\\) adalah ....`, 
+        options: [
+          { id:'A', text:'3', score: 0 },
+          { id:'B', text:'6', score: 0 },
+          { id:'C', text:'10', score: 0 },
+          { id:'D', text:'16', score: 3.33 },
+          { id:'E', text:'21', score: 0 }
+        ] },
+
+        { id:'tka_sma_3_mtkl_27', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Diberikan bahwa matriks \\(T=\\begin{pmatrix}1&m\\\\n&2\\end{pmatrix}\\) mentransformasikan garis \\(y=4-3x\\) ke garis \\(3x-2y=8\\). Nilai dari \\(m^2-2n\\) adalah ....`, 
+        options: [
+          { id:'A', text:'9', score: 0 },
+          { id:'B', text:'7', score: 3.33 },
+          { id:'C', text:'5', score: 0 },
+          { id:'D', text:'3', score: 0 },
+          { id:'E', text:'1', score: 0 }
+        ] },
+
+        { id:'tka_sma_3_mtkl_28', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Diketahui vektor \\(\\vec{u}=(2,3,a)\\) dan \\(\\vec{v}=(1,2,b)\\). Jika \\(|\\vec{u}-\\vec{v}|=2\\) dan \\(ab=3\\), nilai dari \\((a+b)^2\\) adalah ....`, 
+        options: [
+          { id:'A', text:'9', score: 0 },
+          { id:'B', text:'12', score: 0 },
+          { id:'C', text:'14', score: 3.33 },
+          { id:'D', text:'16', score: 0 },
+          { id:'E', text:'25', score: 0 }
+        ] },
+
+        { id:'tka_sma_3_mtkl_29', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Diketahui bahwa konstanta polinomial \\(p(x)\\) adalah \\(-5\\). Polinomial \\(p(x)\\) jika dibagi oleh \\(x-1\\), bersisa \\(-3\\). Polinomial \\(q(x)\\) jika dibagi oleh \\(x^2+8x+15\\), bersisa \\(3x+12\\). Tentukan semua pernyataan berikut yang benar terkait dengan polinomial \\(p(x)\\) dan \\(q(x)\\)! <b>Jawaban benar lebih dari satu.</b>`, 
+        options: [
+          { id:'A', text:'$p(0)=1$.', score: 0 },
+          { id:'B', text:'$q(-3)=-3$.', score: 0 },
+          { id:'C', text:'$p(1)=q(-5)$.', score: 1.11 },
+          { id:'D', text:'Sisa pembagian $(q\\circ p)(x)$ oleh $x$ adalah $-3$.', score: 1.11 },
+          { id:'E', text:'Sisa pembagian $(q\\circ p)(x)$ oleh $x-1$ adalah $3$.', score: 1.11 }
+        ] },
+
+        { id:'tka_sma_3_mtkl_30', packageId:'tka_sma_3', category:'MTKL', 
+        question:`Sebuah perusahaan teknologi mengirim dua drone dari titik \\(O(0,0)\\). Drone Alpha dikirim ke titik \\(A(6,8)\\) untuk mengantar barang ke pelanggan, sedangkan drone Bravo menuju titik \\(B(-3,4)\\) untuk mengambil dokumen. Vektor \\(\\overrightarrow{OA}\\) dan \\(\\overrightarrow{OB}\\) menunjukkan arah terbang kedua drone dengan \\(\\theta\\) adalah sudut antara vektor \\(\\overrightarrow{OA}\\) dan \\(\\overrightarrow{OB}\\). Berdasarkan informasi di atas, tentukan apakah setiap pernyataan berikut bernilai BENAR atau SALAH! I. Jarak tempuh drone Bravo 6 satuan. II. Drone Alpha menempuh jarak lebih jauh daripada drone Bravo. III. Besar sudut \\(\\theta\\) yang dibentuk tidak sama dengan \\(90^\\circ\\).`, 
+        options: [
+          { id:'A', text:'Benar, Benar, Benar', score: 0 },
+          { id:'B', text:'Benar, Salah, Benar', score: 0 },
+          { id:'C', text:'Salah, Benar, Benar', score: 3.33 },
+          { id:'D', text:'Salah, Benar, Salah', score: 0 },
+          { id:'E', text:'Salah, Salah, Benar', score: 0 }
+        ] },
+      
        { id: 'tka_sma_3_kimia_01', packageId: 'tka_sma_3', category: 'KIMIA', 
         question: "",
         options: [
