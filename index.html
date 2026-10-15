@@ -198,7 +198,374 @@ body {
     .pb-safe {
         padding-bottom: env(safe-area-inset-bottom, 1.5rem);
     }  
-  </style>
+
+/* 1. Mencegah elemen melebar keluar dari layar */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#app {
+    min-width: 0;
+    max-width: 100%;
+}
+
+#app *,
+.main-scroll-area *,
+.scroll-area * {
+    min-width: 0;
+}
+
+.main-scroll-area,
+.scroll-area {
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+}
+
+/* 2. Teks soal, pembahasan, dan pilihan jawaban */
+.question-content,
+.question-text,
+.question-content p,
+.question-text p,
+.main-scroll-area p,
+.main-scroll-area li {
+    overflow-wrap: anywhere;
+    word-break: normal;
+    max-width: 100%;
+}
+
+.question-content,
+.question-text {
+    line-height: 1.7;
+}
+
+/* Jangan memotong teks, superskrip, atau subskrip */
+.question-content sup,
+.question-content sub,
+.question-text sup,
+.question-text sub,
+.main-scroll-area sup,
+.main-scroll-area sub {
+    line-height: 0;
+}
+
+/* 3. Gambar soal dan gambar umum */
+img,
+.question-image,
+.option-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.question-image-container {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-image {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: min(65vh, 650px);
+    object-fit: contain;
+    transform: none;
+}
+
+.option-img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+}
+
+/* Hindari gambar membesar keluar dari kontainer saat disentuh */
+.question-image:hover {
+    transform: none;
+}
+
+/* Gambar yang berada dalam soal atau pembahasan */
+.question-content img,
+.question-text img,
+.main-scroll-area img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* 4. Tabel: pertahankan struktur kolom dan sediakan scroll */
+.question-content table,
+.question-text table,
+.main-scroll-area table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+}
+
+/* Tabel biasa tetap menyesuaikan ruang */
+.question-content table,
+.question-text table {
+    margin: 12px auto;
+}
+
+/* Tabel lebar dapat digeser tanpa melebarkan halaman */
+.question-content table,
+.question-text table,
+.main-scroll-area table {
+    overflow-x: auto;
+}
+
+/* Sel tabel tidak memaksa seluruh halaman menjadi lebar */
+.question-content th,
+.question-content td,
+.question-text th,
+.question-text td,
+.main-scroll-area th,
+.main-scroll-area td {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    vertical-align: middle;
+    padding: 6px 9px;
+}
+
+/* Tabel dengan banyak kolom tetap bisa dibaca */
+.question-content table th,
+.question-content table td,
+.question-text table th,
+.question-text table td {
+    min-width: 40px;
+}
+
+/* 5. Rumus matematika MathJax, pecahan, akar, dan pangkat */
+mjx-container {
+    max-width: 100%;
+}
+
+mjx-container[display="true"] {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.5em 0.2em 0.8em;
+    margin: 0.8em 0;
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+}
+
+mjx-container:not([display="true"]) {
+    overflow-wrap: normal;
+}
+
+/* Area rumus khusus jika digunakan oleh aplikasi */
+.math-display {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: normal;
+    padding: 10px 6px 14px;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Jangan memecah rumus menjadi karakter terpisah */
+mjx-container,
+.math-display mjx-container {
+    word-break: normal;
+}
+
+/* 6. Rumus kimia dan notasi ilmiah */
+.question-content .formula,
+.question-text .formula,
+.main-scroll-area .formula {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/* 7. Matriks, vektor, sistem persamaan, dan tabel LaTeX */
+mjx-container[display="true"] > svg {
+    max-width: none;
+}
+
+/* SVG rumus boleh melebar di area gulirnya sendiri */
+mjx-container[display="true"] svg {
+    height: auto;
+}
+
+/* Diagram SVG biasa */
+.question-content svg,
+.question-text svg,
+.main-scroll-area svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 8. Grafik, canvas, dan visualisasi */
+.question-content canvas,
+.question-text canvas,
+.main-scroll-area canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Grafik yang dibungkus kontainer */
+.chart-container,
+.graph-container,
+.diagram-container,
+.matrix-container {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 9. Kode, data, dan teks teknis panjang */
+.question-content pre,
+.question-text pre,
+.main-scroll-area pre {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+}
+
+.question-content code,
+.question-text code {
+    overflow-wrap: anywhere;
+}
+
+/* 10. Kartu, pilihan, dan panel yang memakai flex/grid */
+.main-scroll-area .flex,
+.main-scroll-area .grid,
+.question-content .flex,
+.question-content .grid {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.main-scroll-area .flex > *,
+.main-scroll-area .grid > * {
+    min-width: 0;
+}
+
+/* 11. Desktop dan laptop */
+@media (min-width: 1024px) {
+    .question-image {
+        max-width: min(100%, 900px);
+        max-height: 650px;
+    }
+
+    .option-img {
+        max-height: 260px;
+    }
+
+    .question-content,
+    .question-text {
+        font-size: 1rem;
+    }
+
+    .question-content th,
+    .question-content td,
+    .question-text th,
+    .question-text td {
+        padding: 8px 12px;
+    }
+}
+
+/* 12. Tablet dan ponsel Android/iOS */
+@media (max-width: 1023px) {
+    .question-image-container {
+        padding: 8px;
+        margin: 12px 0;
+    }
+
+    .question-image {
+        max-width: 100%;
+        max-height: 55vh;
+    }
+
+    .option-img {
+        max-height: 180px;
+    }
+
+    .question-content,
+    .question-text {
+        font-size: 0.96rem;
+        line-height: 1.7;
+    }
+
+    .question-content th,
+    .question-content td,
+    .question-text th,
+    .question-text td {
+        padding: 5px 7px;
+        font-size: 0.9em;
+    }
+
+    mjx-container[display="true"] {
+        text-align: left;
+        margin: 0.7em 0;
+    }
+}
+
+/* 13. Ponsel dengan layar sempit */
+@media (max-width: 480px) {
+    .question-image-container {
+        padding: 6px;
+        border-radius: 8px;
+    }
+
+    .question-image {
+        max-height: 45vh;
+    }
+
+    .option-img {
+        max-height: 145px;
+    }
+
+    .question-content,
+    .question-text {
+        font-size: 0.92rem;
+    }
+
+    .question-content th,
+    .question-content td,
+    .question-text th,
+    .question-text td {
+        padding: 4px 6px;
+        font-size: 0.85em;
+    }
+
+    .math-display {
+        font-size: 0.95em;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+
+/* 14. Area aman iPhone dan perangkat dengan sudut layar */
+@supports (padding: env(safe-area-inset-bottom)) {
+    .main-scroll-area {
+        scroll-padding-bottom:
+            calc(16px + env(safe-area-inset-bottom));
+    }
+}
+</style>
 <script>
 window.MathJax = {
     tex: {
@@ -208,6 +575,11 @@ window.MathJax = {
         displayMath: [
             ['\\[', '\\]'], ['$$', '$$']
         ]
+    },
+    chtml: {
+        scale: 1,
+        displayAlign: 'center',
+        displayIndent: '0'
     },
     options: {
         skipHtmlTags: ['script','noscript', 'style', 'textarea', 'pre', 'code' ]
